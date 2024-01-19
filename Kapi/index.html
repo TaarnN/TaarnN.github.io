@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"><script src="js/bootstrap.bundle.min.js"></script>
+    <title>Kapyr's Keys</title>
+    <link rel="icon" type="image/x-icon" href="Untitled/‎Untitled.‎001.png">
+    <style>
+    
+          
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:darkblue;
+    color: darkblue;
+    text-align: center;
+    height: 1%;
+  }
+  body, h1, h2, h3, h4, h5, h6, #bttt, #ma {
+    font-family: "Trebuchet MS", Tahoma, sans-serif;
+  }
+  .hh {
+    color: darkviolet;
+  }
+  /* Style the tab */
+  .tab {
+    overflow: hidden;
+    border: 1px solid darkviolet;
+    background-color: white;
+    height: 55px;
+    border-radius: 80px;
+    justify-content: center;
+  }
+  
+  /* Style the buttons inside the tab */
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin: 14px;
+    margin-left: 17px;
+    transition: 0.3s;
+    font-size: 17px;
+    text-align: center;
+    border-radius: 10px;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: darkviolet;
+    color: white;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: darkblue;
+    color: white;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+    margin: 17px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .button-group {
+    display: flex;
+    gap: 10px; /* Adjust as needed */
+  }
+  svg {
+    position: fixed;
+  }
+  .w3-card {
+    width: 85%;
+    height: 363px;
+    border-radius: 30px;
+    background: white;
+    box-shadow: 15px 15px 30px #c3c3c3,
+               -15px -15px 30px #ffffff;
+    align-items: center;
+    margin: auto;
+  }
+  .w3-cardy {
+    width: 85%;
+    height: 100px;
+    border-radius: 30px;
+    background: white;
+    box-shadow: 15px 15px 30px #c3c3c3,
+               -15px -15px 30px #ffffff;
+    align-items: center;
+    margin: auto;
+  }
+  .w3-cardwiset {
+    width: 85%;
+    height: 363px;
+    border-radius: 30px;
+    background: white;
+    box-shadow: 15px 15px 30px #c3c3c3,
+               -15px -15px 30px #ffffff;
+    align-items: center;
+    margin: auto;
+  }
+  /* This is an example, feel free to delete this code */
+.tooltip-container {
+  --background: #333333;
+  --color: darkviolet;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color);
+  padding: 0.7em 1.8em;
+  border-radius: 8px;
+  text-transform: uppercase;
+  height: 60px;
+  width: 300px;
+  display: grid;
+  place-items: center;
+  border: 2px solid var(--color);
+}
+
+.text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  transform-origin: -100%;
+  transform: scale(1);
+  transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.tooltip-container span:last-child {
+  position: absolute;
+  top: 0%;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  opacity: 1;
+  background-color: var(--background);
+  z-index: -1;
+  border: 2px solid var(--background);
+  transform: scale(0);
+  transform-origin: 0;
+  transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+  display: grid;
+  place-items: center;
+}
+
+.tooltip {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0.3em 0.6em;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+  background: var(--background);
+  z-index: -1;
+  border-radius: 8px;
+  scale: 0;
+  transform-origin: 0 0;
+  text-transform: capitalize;
+  font-weight: 400;
+  font-size: 16px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+}
+
+.tooltip::before {
+  position: absolute;
+  content: "";
+  height: 0.6em;
+  width: 0.6em;
+  bottom: -0.2em;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  background: var(--background);
+}
+
+.tooltip-container:hover .tooltip {
+  top: -100%;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  scale: 1;
+  animation: shake 0.5s ease-in-out both;
+}
+
+.tooltip-container:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  color: white;
+  border-color: transparent;
+}
+
+.tooltip-container:hover span:last-child {
+  transform: scale(1);
+  left: 0;
+}
+
+.tooltip-container:hover .text {
+  opacity: 0;
+  top: 0%;
+  left: 100%;
+  transform: scale(0);
+}
+
+@keyframes shake {
+  0% {
+    rotate: 0;
+  }
+
+  25% {
+    rotate: 7deg;
+  }
+
+  50% {
+    rotate: -7deg;
+  }
+
+  75% {
+    rotate: 1deg;
+  }
+
+  100% {
+    rotate: 0;
+  }
+}
+.cardoo {
+  transition: 250ms;
+}
+.cardoo:hover {
+  transform: scale(1.0, 1.0);
+}
+
+.cardoo:not(:hover) {
+  filter: blur(2px);
+  transform: scale(0.9, 0.9);
+}
+body{
+  width: 100%;
+  margin: auto;
+}
+.form {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+  width: 300px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 30px 30px -30px rgba(27, 26, 26, 0.315);
+}
+
+.form .title {
+  color: royalblue;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: -1px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form input {
+  outline: 0;
+  border: 1px solid rgb(219, 213, 213);
+  padding: 8px 14px;
+  border-radius: 8px;
+  width: 100%;
+  height: 50px;
+}
+
+.form textarea {
+  border-radius: 8px;
+  height: 100px;
+  width: 100%;
+  resize: none;
+  outline: 0;
+  padding: 8px 14px;
+  border: 1px solid rgb(219, 213, 213);
+}
+
+.form button {
+  align-self: flex-end;
+  padding: 8px;
+  outline: 0;
+  border: 0;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: royalblue;
+  color: #fff;
+  cursor: pointer;
+}
+    
+    </style>
+    <script>
+      function change(){
+        document.getElementById("kapidis").innerHTML = "Our most proud pattern. Designed by Anyanus Chatmahakulchai from P.5/3.\nThere are many versions of this pattern, both from Anyanus herself and also Taarn's version as well. But in the end, Anyanus's was used. This pattern is both the first pattern of Anyanus and the whole group. It is a very unique pattern because the remaining patterns were all designed by Taarn himself. This is the only Anyanus pattern."
+        document.getElementById("buton").style.display = "none"
+      }
+      function colorr(){
+        document.getElementById("bttt").style.color = "#9400d3"
+      }
+      function colout(){
+        document.getElementById("bttt").style.color = "#00008b"
+      }
+      function onbut(x){
+        x.style.color = "#00008b"
+        x.style.borderColor = "#00008b"
+      }
+      function outbut(x){
+        x.style.color = "darkviolet"
+        x.style.borderColor = "darkviolet"
+      }
+      function why(x){
+        if (x.innerHTML == "This button can't do anything") {
+          x.innerHTML = "Why did you click on me?"
+        } else if (x.innerHTML == "Why did you click on me?") {
+          x.innerHTML = "Why did you click on me again?"
+        } else if (x.innerHTML == "Why did you click on me again?") {
+          x.innerHTML = "Again??"
+        } else if (x.innerHTML == "Again??") {
+          x.innerHTML = "I told you there was nothing I could do!"
+        } else {
+          x.innerHTML = "I won't say again. You can click on me as many times as you want."
+        }
+      }
+      function cardwiset(){
+        document.getElementById("cardwiset").style.height = "500px";
+      }
+    </script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+  <!--Back button-->
+  <a href="#head"><svg xmlns="http://www.w3.org/2000/svg" width="41" height="41" fill="darkblue" class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16" style="left: 94%; top: 88%;">
+    <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z"/>
+  </svg></a>
+    <!--Header-->
+    <div id="head" class="container p-3" style="width: 100%;">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom" id="header" >
+          <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+            <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+            <span class="fs-2 ma" style="color: darkviolet;">Kapyr's Keys</span>
+            
+          </a>
+    
+          <ul class="nav nav-pills">
+            <li class="nav-item"><a href="#allai" class="nav-link fs-5" style="color: darkblue; margin-top: 15px;">Patterns</a></li><li class="nav-item"><a href="#btttt" class="nav-link fs-5" style="color: darkblue; margin-top: 15px;">About us</a></li>
+          </ul>
+        </header>
+      </div>
+      <p style="padding: 20px;"></p>
+    <!--image-->
+    <div class="w3-display-container w3-content w3-center cardoo">
+        <img class="w3-image w3-round-large" src="https://images.unsplash.com/photo-1543183601-e4c9648a72f3?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="kapi" width="3200" height="1700">
+        <div class="w3-display-middle w3-padding-large w3-wide w3-text-light-grey w3-center w3-round-large" style="border-width: 3px; border-style: solid; border-color: white; ">
+          <h1 class="w3-hide-medium w3-hide-small w3-xxxlarge" >KAPIPLALAR</h1>
+          <h5 class="w3-hide-large" style="white-space:nowrap"></h5>
+          <h4 class="w3-hide-medium w3-hide-small">Shrimp paste fermented fish</h4>
+        </div>
+    </div>
+    <!--Hero Kapi-->
+    <hr style="color: white;padding: 20px;">
+    <div id="cardwiset" class="px-4 py-5 my-5 text-center container w3-contianer w3-panel w3-cardwiset cardoo w3-panel w3-round-large">
+        <img class="d-block mx-auto mb-4" src="kapi.png" alt="" width="100" height="100">
+        <h1 class="display-5 fw-bold" style="color: rgb(3, 3, 72);">Kapiplalar (Capybara)</h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-4" id="kapidis" style="color:darkblue;">Our most proud pattern. Designed by Anyanus Chatmahakulchai from P.5/3.</p>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <button onmouseover="onbut(this)" onmouseout="outbut(this)"  id="buton" type="button" class="btn btn-outline-secondary btn-lg px-4" style="border-color: darkviolet; color: darkviolet; background-color: white; " onclick="change(); cardwiset()">More about this pattern</button>
+          </div>
+        </div>
+      </div>
+    
+    <hr style="color: white;padding: 30px;">
+    <div class="container"><hr style="color: grey;"></div>
+    
+    <hr style="color: white;padding: 60px;">
+      <div class="container w3-container">
+        <!--Hero Panda-->
+        <div id="allai" class="px-4 py-5 my-5 text-center cardoo">
+            <img class="d-block mx-auto mb-4" src="Navy/Untitled._001.png" alt="" width="100" height="80">
+            <h1 class="display-5 fw-bold">Panda</h1>
+            <div class="col-lg-6 mx-auto">
+              <p class="lead mb-4" style="color:#00008b;">Mee Panda Mee Panda Mee Panda Mee Mee Panda. Designed by Taarn Nguitragool</p>
+              <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                <button onclick="why(this)" onmouseover="onbut(this)" onmouseout="outbut(this)"  type="button" class="btn btn-outline-secondary btn-lg px-4" style="border-color: darkviolet; color: darkviolet; background-color: white; ">This button can't do anything</button>
+              </div>
+            </div>
+        </div>
+          <hr style="color: white;padding: 20px;">
+          
+        <!--Hero flower-->
+        <div class="px-4 py-5 my-5 text-center w3-panel w3-card w3-round-large cardoo">
+            <img class="d-block mx-auto mb-4" src="Navy/Untitled._002.png" alt="" width="90" height="80">
+            <h1 class="display-5 fw-bold">Flower</h1>
+            <div class="col-lg-6 mx-auto">
+              <p class="lead mb-4" style="color:darkblue;">Multiplying Flower. Designed by Taarn Nguitragool</p>
+              <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                <button onclick="why(this)"  onmouseover="onbut(this)" onmouseout="outbut(this)"  type="button" class="btn btn-outline-secondary btn-lg px-4" style="border-color: darkviolet; color: darkviolet; background-color: white; ">This button can't do anything</button>
+              </div>
+            </div>
+          </div>
+          <hr style="color: white;padding: 20px;">
+        <!--Hero TT-->
+        <div class="px-4 py-5 my-5 text-center cardoo">
+            <img class="d-block mx-auto mb-4" src="Navy/Untitled._003.png" alt="" width="100" height="65">
+            <h1 class="display-5 fw-bold">Turtle</h1>
+            <div class="col-lg-6 mx-auto">
+              <p class="lead mb-4" style="color:darkblue;">Tao But Ngan Mai Praneed. Designed by Taarn Nguitragool</p>
+              <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                <button onclick="why(this)"  onmouseover="onbut(this)" onmouseout="outbut(this)"  type="button" class="btn btn-outline-secondary btn-lg px-4" style="border-color: darkviolet; color: darkviolet; background-color: white; ">This button can't do anything</button>
+              </div>
+            </div>
+          </div>
+          <hr style="color: white;padding: 20px;">
+        <!--Hero Cha-->
+        <div class="px-4 py-5 my-5 text-center w3-panel w3-card w3-round-large cardoo">
+            <img class="d-block mx-auto mb-4" src="Navy/Untitled._004.png" alt="" width=" 60" height="90">
+            <h1 class="display-5 fw-bold">Chanom Kaimuk</h1>
+            <div class="col-lg-6 mx-auto">
+              <p class="lead mb-4" style="color:darkblue;">Tua Unwrap Yak. Designed by Taarn Nguitragool</p>
+              <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                <button onclick="why(this)"  onmouseover="onbut(this)" onmouseout="outbut(this)"  type="button" class="btn btn-outline-secondary btn-lg px-4" style="border-color: darkviolet; color: darkviolet; background-color: white; ">This button can't do anything</button>
+              </div>
+            </div>
+          </div>
+          <hr style="color: white;padding: 20px;">
+        <!--Hero Meaw-->
+        <div class="px-4 py-5 my-5 text-center cardoo">
+            <img class="d-block mx-auto mb-4" src="Navy/Untitled._005.png" alt="" width="100" height="80">
+            <h1 class="display-5 fw-bold">Cat</h1>
+            <div class="col-lg-6 mx-auto">
+              <p class="lead mb-4" style="color:darkblue;">Taarn's First Pattern. Designed by Taarn Nguitragool</p>
+              <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                <button onclick="why(this)"  onmouseover="onbut(this)" onmouseout="outbut(this)"  type="button" class="btn btn-outline-secondary btn-lg px-4" style="border-color: darkviolet; color: darkviolet; background-color: white; ">This button can't do anything</button>
+              </div>
+            </div>
+          </div>
+          <hr style="color: white;padding: 20px;">
+        <!--Hero Girafe-->
+        <div class="px-4 py-5 my-5 text-center w3-panel w3-card w3-round-large cardoo">
+            <img class="d-block mx-auto mb-4" src="Navy/Untitled._006.png" alt="" width="70" height="80">
+            <h1 class="display-5 fw-bold">Giraffe</h1>
+            <div class="col-lg-6 mx-auto">
+              <p class="lead mb-4" style="color:darkblue;">Ji Rab Fé. Designed by Taarn Nguitragool</p>
+              <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                <button onclick="why(this)"  onmouseover="onbut(this)" onmouseout="outbut(this)"  type="button" class="btn btn-outline-secondary btn-lg px-4" style="border-color: darkviolet; color: darkviolet; background-color: white; ">This button can't do anything</button>
+              </div>
+            </div>
+          </div>
+          <hr style="color: white;padding: 20px;">
+        <!--Hero Plus-->
+        <div class="px-4 py-5 my-5 text-center cardoo">
+            <img class="d-block mx-auto mb-4" src="Navy/Untitled._007.png" alt="" width="90" height="90">
+            <h1 class="display-5 fw-bold">Plus</h1>
+            <div class="col-lg-6 mx-auto">
+              <p class="lead mb-4" style="color:darkblue;">Aj.Nuad. Designed by Taarn Nguitragool</p>
+              <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                <button onclick="why(this)"  onmouseover="onbut(this)" onmouseout="outbut(this)"  type="button" class="btn btn-outline-secondary btn-lg px-4" style="border-color: darkviolet; color: darkviolet; background-color: white; ">This button can't do anything</button>
+              </div>
+            </div>
+          </div>
+          <hr style="color: white;padding: 20px;">
+        <!--Hero Nok-->
+        <div class="px-4 py-5 my-5 text-center w3-panel w3-card w3-round-large cardoo">
+            <img class="d-block mx-auto mb-4" src="Navy/Untitled._008.png" alt="" width="110" height="80">
+            <h1 class="display-5 fw-bold">Bird</h1>
+            <div class="col-lg-6 mx-auto">
+              <p class="lead mb-4" style="color:darkblue;">Fattest Pattern. Designed by Taarn Nguitragool</p>
+              <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                <button onclick="why(this)"  onmouseover="onbut(this)" onmouseout="outbut(this)"  type="button" class="btn btn-outline-secondary btn-lg px-4" style="border-color: darkviolet; color: darkviolet; background-color: white; ">This button can't do anything</button>
+              </div>
+            </div>
+          </div>
+          <hr style="color: white;padding: 20px;">
+        <!--Hero Divide-->
+        <div class="px-4 py-5 my-5 text-center cardoo">
+            <img class="d-block mx-auto mb-4" src="Navy/Untitled._009.png" alt="" width="80" height="100">
+            <h1 class="display-5 fw-bold">Divide</h1>
+            <div class="col-lg-6 mx-auto">
+              <p class="lead mb-4" style="color:#00008b;">Why 2 / 2 = 1.0 ? Designed by Taarn Nguitragool</p>
+              <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                <button onclick="why(this)"  onmouseover="onbut(this)" onmouseout="outbut(this)"  type="button" class="btn btn-outline-secondary btn-lg px-4" style="border-color: darkviolet; color: darkviolet; background-color: white; ">This button can't do anything</button>
+              </div>
+            </div>
+          </div>
+          <hr style="color: white;padding: 20px;">
+        <!--Hero Kwn-->
+        <div class="px-4 py-5 my-5 text-center w3-panel w3-card w3-round-large cardoo">
+            <img class="d-block mx-auto mb-4" src="Navy/Untitled._010.png" alt="" width="75" height="85">
+            <h1 class="display-5 fw-bold">Deer</h1>
+            <div class="col-lg-6 mx-auto">
+              <p class="lead mb-4" style="color:darkblue;">Deer Song Kao. Designed by Taarn Nguitragool</p>
+              <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                <button onclick="why(this)"  type="button" onmouseover="onbut(this)" onmouseout="outbut(this)" class="btn btn-outline-secondary btn-lg px-4" style="border-color: darkviolet; color: darkviolet; background-color: white; ">This button can't do anything</button>
+              </div>
+            </div>
+          </div>
+        </div></div>
+        <hr style="color: white;padding: 60px;">
+
+        <div class="w3-container w3-center w3-container container w3-panel cardoo" style="padding: 10px;">
+          <h1 class="display-5" id="btttt" style="color: darkviolet;">By Maklamdeang Group</h1>
+          
+          <p style="padding-top: 10px;"></p>
+        <div class="container w3-center cardoo">
+        <div class="tab">
+          <button class="tablinks button-group" onclick="openCity(event, 'Taarn')" id="defaultOpen">Taarn</button>
+          <button class="tablinks button-group" onclick="openCity(event, 'Sirinya')">Sirinya</button>
+          <button class="tablinks button-group" onclick="openCity(event, 'Anyanus')">Anyanus</button>
+          <button class="tablinks button-group" onclick="openCity(event, 'Kitipoom')">Kitipoom</button>
+          <button class="tablinks button-group" onclick="openCity(event, 'Yodsakron')">Yodsakron</button>
+        </div>
+        
+        <div id="Taarn" class="tabcontent">
+          <h1 style="color: darkblue;">" Taarn Nguitragool "</h1>
+          <h5 style="padding-bottom: 10px;">Pattern Disigner, Website Coder</h5>
+        </div>
+        
+        <div id="Sirinya" class="tabcontent">
+          <h1 style="color: darkblue;">" Sirinya Natsupakpong "</h1>
+          <h5 style="padding-bottom: 10px;">Commenter, Product Parts Preparer</h5>
+        </div>
+        
+        <div id="Anyanus" class="tabcontent">
+          <h1 style="color: darkblue;">" Anyanus Chatmahakulchai "</h1>
+          <h5 style="padding-bottom: 10px;">Pattern Disigner, Package Disigner</h5>
+        </div>
+
+        <div id="Kitipoom" class="tabcontent">
+          <h1 style="color: darkblue;">" Kitipoom Kiwsasub "</h1>
+          <h5 style="padding-bottom: 10px;">Commenter, Package Disigner</h5>
+        </div>
+        
+        <div id="Yodsakron" class="tabcontent">
+          <h1 style="color: darkblue;">" Yodsakron Singpia "</h1>
+          <h5 style="padding-bottom: 10px;">Super Commenter</h5>
+        </div></div>
+        
+        <script>
+        function openCity(evt, cityName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+        document.getElementById("defaultOpen").click();
+        function scpp(){
+          document.getElementById("core").innerHTML = String(parseInt(document.getElementById("core").innerHTML)+=1);
+        }
+    
+        </script>
+        </div><hr style="color: white; padding: 40px;">
+        <form class="form cardoo" style="border-radius: 30px;
+      background: white;
+      box-shadow: 15px 15px 30px #c3c3c3,
+                 -15px -15px 30px #ffffff;
+      align-items: center;
+      margin: auto; height: 10em; width: 35em;">
+        <div class="title" style="color: darkviolet; padding-top: 20px;">Contact us</div>
+        <p style="color: darkblue;">1620115204@kusrd.ac.th ( Kitipoom Kiwsasub )</p>
+      
+    </form>
+      <hr style="color: white;padding: 40px;">
+      
+      <div class="w3-panel w3-cardy cardoo"><hr style="color: white;padding: 10px; margin: auto;">
+      <p class="display-5 " id="bttt" onmouseover="colorr()" onmouseout="colout()" style="text-align: center; color: darkblue;" class="display-6">Everything is 15฿, even the coasters!</p><hr style="color: white;padding: 10px;"></div>
+      <hr style="color: white;padding: 40px;">
+      
+      <!---->
+      <div class="tooltip-container " style="margin: auto; padding-bottom: 20px;">
+        <span class="tooltip">from us!</span>
+        <span class="text" style="font-size: medium; border: #00008b; color: darkviolet;">I'm not a button</span>
+        <span>Thank you</span>
+      </div>  
+      <hr style="color: white;padding: 40px;">
+      
+      <div class="footer"><p></p></div>
+    </body>
+</html>
