@@ -8,7 +8,13 @@
     <style>
 @media (orientation: portrait) {
   /* สไตล์ที่จะแสดงเมื่ออุปกรณ์เป็นแนวนอน */
-  * {
+  *:not(.ttttt) {
+    display: none;
+  }
+}
+@media (orientation: landscape) {
+  /* สไตล์ที่จะแสดงเมื่ออุปกรณ์เป็นแนวนอน */
+  .ttttt {
     display: none;
   }
 }
@@ -336,7 +342,7 @@ body{
       <p style="padding: 20px;"></p>
     <!--image-->
     <div class="w3-display-container w3-content w3-center cardoo">
-        <img class="w3-image w3-round-large" src="https://images.unsplash.com/photo-1543183601-e4c9648a72f3?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="kapi" width="3200" height="1700">
+        <img class="w3-image w3-round-large" src="https://images.unsplash.com/photo-1543183601-e4c9648a72f3?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="kapi" width="90%" height="1700">
         <div class="w3-display-middle w3-padding-large w3-wide w3-text-light-grey w3-center w3-round-large">
           <h1 class="w3-hide-medium w3-hide-small" style="font-size: 3vw;">KAPIPLALAR</h1>
           <hr style="border: 3px solid white;">
