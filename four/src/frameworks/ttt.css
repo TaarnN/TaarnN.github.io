@@ -1,0 +1,27 @@
+#ttt {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  text-transform: uppercase;
+}
+
+img {
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  flex-basis: 51%;
+}
+
+#ddd {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  flex-basis: 100%;
+  color: rgb(0, 0, 56);
+  text-transform: uppercase;
+}
