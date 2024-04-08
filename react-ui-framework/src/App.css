@@ -1,0 +1,54 @@
+#cntdiv > * {
+  margin-left: 13.6%;
+  flex-basis: 100%;
+}
+
+#cntdiv {
+  display: flex;
+  justify-content: center; /* Horizontal centering */
+  align-items: center; /* Vertical centering */
+  flex-wrap: wrap;
+}
+
+#who {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#tt {
+  margin-top: 1rem;
+  margin-left: 13.6%;
+  font-size: 4rem;
+  font-weight: 400;
+  flex-basis: 100%;
+}
+
+#ds {
+  font-size: 1.5rem;
+}
+
+#mhr {
+  background-color: darkgrey;
+  height: 2.5px;
+  width: 80%;
+  margin: auto;
+}
+
+#shr {
+  background-color: rgb(227, 227, 227);
+  height: 2px;
+  width: 380px;
+  flex-basis: 50%;
+  margin-top: -0.5rem;
+  margin-bottom: 3rem;
+}
+
+#ushr {
+  background-color: rgb(227, 227, 227);
+  height: 2px;
+  width: 20%;
+  flex-basis: 67%;
+  margin-top: 3rem;
+}
