@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tai Pleng Tualakhorn</title>
+    <style>
+        .btn {
+            background-color: #ffffff;
+            border-width: 1.5px;
+            border-radius: 100rem;
+            padding: 0.7rem;
+            margin-left: 1rem;
+            margin-top: 1rem;
+            align-items: center;
+        }
+        .back {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body style="justify-content: center;">
+    <script>
+        const IceCamera = new Audio('./Characters theme/IceCamera.mp3');
+        const ChaoWangWonMeka = new Audio('./Characters theme/ChaoWangWonMeKa.mp3');
+        const ChefPomNamNgern = new Audio('./Characters theme/ChefPomNamNgern.mp3');
+        const JaNon = new Audio('./Characters theme/JaNon.mp3');
+        const KeqingV2 = new Audio('./Characters theme/KeqingV2.mp3');
+        const KlingDai = new Audio('./Characters theme/KlingDai.mp3');
+        const LomSuarDaeng = new Audio('./Characters theme/LomSuarDaeng.mp3');
+        const MarFaiFarV2 = new Audio('./Characters theme/MarFaiFarV2.mp3');
+        const MorPomKeaw = new Audio('./Characters theme/MorPomKeaw.mp3');
+        const PLiangKlee = new Audio('./Characters theme/PLiangKlee.mp3');
+        const RedHatWithGun = new Audio('./Characters theme/RedHatWithGun.mp3');
+        const ThephPhaiPhar = new Audio('./Characters theme/ThephPhaiPhar.mp3');
+        const ToiLom = new Audio('./Characters theme/ToiLom.mp3');
+        const Tua3Dau = new Audio('./Characters theme/Tua3Dau.mp3');
+    
+        function playAudio(url) {
+            url.play();
+        }
+
+        function stopAudio(url) {
+            url.pause();
+        }
+
+        function resetAudio(url) {
+            url.currentTime = 0;
+        }
+    </script>
+
+    <button onclick="playAudio(IceCamera)" class="btn"><img src="./play.svg">Start 1</button>
+    <button onclick="stopAudio(IceCamera)" class="btn"><img src="./stop.svg">Stop 1</button>
+    <button onclick="resetAudio(IceCamera)" class="btn"><img src="./skip-backward.svg" class="back">Reset 1</button>
+    <br>
+    <button onclick="playAudio(ChaoWangWonMeka)" class="btn"><img src="./play.svg">Play 2</button>
+    <button onclick="stopAudio(ChaoWangWonMeka)" class="btn"><img src="./stop.svg">Stop 2</button>
+    <button onclick="resetAudio(ChaoWangWonMeka)" class="btn"><img src="./skip-backward.svg" class="back">Reset 2</button>
+    <br>
+    <button onclick="playAudio(ChefPomNamNgern)" class="btn"><img src="./play.svg">Play 3</button>
+    <button onclick="stopAudio(ChefPomNamNgern)" class="btn"><img src="./stop.svg">Stop 3</button>
+    <button onclick="resetAudio(ChefPomNamNgern)" class="btn"><img src="./skip-backward.svg" class="back">Reset 3</button>
+    <br>
+    <button onclick="playAudio(JaNon)" class="btn"><img src="./play.svg">Play 4</button>
+    <button onclick="stopAudio(JaNon)" class="btn"><img src="./stop.svg">Stop 4</button>
+    <button onclick="resetAudio(JaNon)" class="btn"><img src="./skip-backward.svg" class="back">Reset 4</button>
+    <br>
+    <button onclick="playAudio(KeqingV2)" class="btn"><img src="./play.svg">Play 5</button>
+    <button onclick="stopAudio(KeqingV2)" class="btn"><img src="./stop.svg">Stop 5</button>
+    <button onclick="resetAudio(KeqingV2)" class="btn"><img src="./skip-backward.svg" class="back">Reset 5</button>
+    <br>
+    <button onclick="playAudio(KlingDai)" class="btn"><img src="./play.svg">Play 6</button>
+    <button onclick="stopAudio(KlingDai)" class="btn"><img src="./stop.svg">Stop 6</button>
+    <button onclick="resetAudio(KlingDai)" class="btn"><img src="./skip-backward.svg" class="back">Reset 6</button>
+    <br>
+    <button onclick="playAudio(LomSuarDaeng)" class="btn"><img src="./play.svg">Play 7</button>
+    <button onclick="stopAudio(LomSuarDaeng)" class="btn"><img src="./stop.svg">Stop 7</button>
+    <button onclick="resetAudio(LomSuarDaeng)" class="btn"><img src="./skip-backward.svg" class="back">Reset 7</button>
+    <br>
+    <button onclick="playAudio(MarFaiFarV2)" class="btn"><img src="./play.svg">Play 8</button>
+    <button onclick="stopAudio(MarFaiFarV2)" class="btn"><img src="./stop.svg">Stop 8</button>
+    <button onclick="resetAudio(MarFaiFarV2)" class="btn"><img src="./skip-backward.svg" class="back">Reset 8</button>
+    <br>
+    <button onclick="playAudio(MorPomKeaw)" class="btn"><img src="./play.svg">Play 9</button>
+    <button onclick="stopAudio(MorPomKeaw)" class="btn"><img src="./stop.svg">Stop 9</button>
+    <button onclick="resetAudio(MorPomKeaw)" class="btn"><img src="./skip-backward.svg" class="back">Reset 9</button>
+    <br>
+    <button onclick="playAudio(PLiangKlee)" class="btn"><img src="./play.svg">Play 10</button>
+    <button onclick="stopAudio(PLiangKlee)" class="btn"><img src="./stop.svg">Stop 10</button>
+    <button onclick="resetAudio(PLiangKlee)" class="btn"><img src="./skip-backward.svg" class="back">Reset 10</button>
+    <br>
+    <button onclick="playAudio(RedHatWithGun)" class="btn"><img src="./play.svg">Play 11</button>
+    <button onclick="stopAudio(RedHatWithGun)" class="btn"><img src="./stop.svg">Stop 11</button>
+    <button onclick="resetAudio(RedHatWithGun)" class="btn"><img src="./skip-backward.svg" class="back">Reset 11</button>
+    <br>
+    <button onclick="playAudio(ThephPhaiPhar)" class="btn"><img src="./play.svg">Play 12</button>
+    <button onclick="stopAudio(ThephPhaiPhar)" class="btn"><img src="./stop.svg">Stop 12</button>
+    <button onclick="resetAudio(ThephPhaiPhar)" class="btn"><img src="./skip-backward.svg" class="back">Reset 12</button>
+    <br>
+    <button onclick="playAudio(ToiLom)" class="btn"><img src="./play.svg">Play 13</button>
+    <button onclick="stopAudio(ToiLom)" class="btn"><img src="./stop.svg">Stop 13</button>
+    <button onclick="resetAudio(ToiLom)" class="btn"><img src="./skip-backward.svg" class="back">Reset 13</button>
+    <br>
+    <button onclick="playAudio(Tua3Dau)" class="btn"><img src="./play.svg">Play 14</button>
+    <button onclick="stopAudio(Tua3Dau)" class="btn"><img src="./stop.svg">Stop 14</button>
+    <button onclick="resetAudio(Tua3Dau)" class="btn"><img src="./skip-backward.svg" class="back">Reset 14</button>
+    <br>
+</body>
+</html>
