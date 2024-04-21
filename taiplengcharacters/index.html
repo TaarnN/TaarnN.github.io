@@ -47,9 +47,63 @@
         function resetAudio(url) {
             url.currentTime = 0;
         }
-    </script>
 
-    <button onclick="playAudio(IceCamera)" class="btn"><img src="./play.svg">Start 1</button>
+        function playAll() {
+            IceCamera.play();
+            ChaoWangWonMeka.play();
+            ChefPomNamNgern.play();
+            JaNon.play();
+            KeqingV2.play();
+            KlingDai.play();
+            LomSuarDaeng.play();
+            MarFaiFarV2.play();
+            MorPomKeaw.play();
+            PLiangKlee.play();
+            RedHatWithGun.play();
+            ThephPhaiPhar.play();
+            ToiLom.play();
+            Tua3Dau.play();
+        }
+
+        function stopAll() {
+            IceCamera.pause();
+            ChaoWangWonMeka.pause();
+            ChefPomNamNgern.pause();
+            JaNon.pause();
+            KeqingV2.pause();
+            KlingDai.pause();
+            LomSuarDaeng.pause();
+            MarFaiFarV2.pause();
+            MorPomKeaw.pause();
+            PLiangKlee.pause();
+            RedHatWithGun.pause();
+            ThephPhaiPhar.pause();
+            ToiLom.pause();
+            Tua3Dau.pause();
+        }
+
+        function resetAll() {
+            IceCamera.currentTime = 0;
+            ChaoWangWonMeka.currentTime = 0;
+            ChefPomNamNgern.currentTime = 0;
+            JaNon.currentTime = 0;
+            KeqingV2.currentTime = 0;
+            KlingDai.currentTime = 0;
+            LomSuarDaeng.currentTime = 0;
+            MarFaiFarV2.currentTime = 0;
+            MorPomKeaw.currentTime = 0;
+            PLiangKlee.currentTime = 0;
+            RedHatWithGun.currentTime = 0;
+            ThephPhaiPhar.currentTime = 0;
+            ToiLom.currentTime = 0;
+            Tua3Dau.currentTime = 0;
+        }
+    </script>
+    <button onclick="playAll()" class="btn"><img src="./play.svg">Play All</button>
+    <button onclick="stopAll()" class="btn"><img src="./stop.svg">Stop All</button>
+    <button onclick="resetAll()" class="btn"><img src="./skip-backward.svg" class="back">Reset All</button>
+    <hr style="margin-top: 1rem; margin-left: 1rem; width: 16rem;">
+    <button onclick="playAudio(IceCamera)" class="btn"><img src="./play.svg">Play 1</button>
     <button onclick="stopAudio(IceCamera)" class="btn"><img src="./stop.svg">Stop 1</button>
     <button onclick="resetAudio(IceCamera)" class="btn"><img src="./skip-backward.svg" class="back">Reset 1</button>
     <br>
