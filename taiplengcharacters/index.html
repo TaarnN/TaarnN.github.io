@@ -1,163 +1,698 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tai Pleng Tualakhorn</title>
     <style>
-        .btn {
-            background-color: #ffffff;
-            border-width: 1.5px;
-            border-radius: 100rem;
-            padding: 0.7rem;
-            margin-left: 1rem;
-            margin-top: 1rem;
-            align-items: center;
-        }
-        .back {
-            margin-right: 10px;
-        }
+      .btn {
+        background-color: #ffffff;
+        border-width: 1.5px;
+        border-radius: 100rem;
+        padding: 0.7rem;
+        margin-left: 1rem;
+        margin-top: 1rem;
+        align-items: center;
+      }
+      .back {
+        margin-right: 10px;
+      }
+      .pause,
+      .play {
+        margin-left: 1rem;
+      }
     </style>
-</head>
-<body style="justify-content: center;">
+  </head>
+  <body style="justify-content: center">
     <script>
-        const IceCamera = new Audio('./Characters theme/IceCamera.mp3');
-        const ChaoWangWonMeka = new Audio('./Characters theme/ChaoWangWonMeKa.mp3');
-        const ChefPomNamNgern = new Audio('./Characters theme/ChefPomNamNgern.mp3');
-        const JaNon = new Audio('./Characters theme/JaNon.mp3');
-        const KeqingV2 = new Audio('./Characters theme/KeqingV2.mp3');
-        const KlingDai = new Audio('./Characters theme/KlingDai.mp3');
-        const LomSuarDaeng = new Audio('./Characters theme/LomSuarDaeng.mp3');
-        const MarFaiFarV2 = new Audio('./Characters theme/MarFaiFarV2.mp3');
-        const MorPomKeaw = new Audio('./Characters theme/MorPomKeaw.mp3');
-        const PLiangKlee = new Audio('./Characters theme/PLiangKlee.mp3');
-        const RedHatWithGun = new Audio('./Characters theme/RedHatWithGun.mp3');
-        const ThephPhaiPhar = new Audio('./Characters theme/ThephPhaiPhar.mp3');
-        const ToiLom = new Audio('./Characters theme/ToiLom.mp3');
-        const Tua3Dau = new Audio('./Characters theme/Tua3Dau.mp3');
-    
-        function playAudio(url) {
-            url.play();
-        }
+      const IceCamera = new Audio("./Characters theme/IceCamera.mp3");
+      const ChaoWangWonMeka = new Audio(
+        "./Characters theme/ChaoWangWonMeKa.mp3"
+      );
+      const ChefPomNamNgern = new Audio(
+        "./Characters theme/ChefPomNamNgern.mp3"
+      );
+      const JaNon = new Audio("./Characters theme/JaNon.mp3");
+      const KeqingV2 = new Audio("./Characters theme/KeqingV2.mp3");
+      const KlingDai = new Audio("./Characters theme/KlingDai.mp3");
+      const LomSuarDaeng = new Audio("./Characters theme/LomSuarDaeng.mp3");
+      const MarFaiFarV2 = new Audio("./Characters theme/MarFaiFarV2.mp3");
+      const MorPomKeaw = new Audio("./Characters theme/MorPomKeaw.mp3");
+      const PLiangKlee = new Audio("./Characters theme/PLiangKlee.mp3");
+      const RedHatWithGun = new Audio("./Characters theme/RedHatWithGun.mp3");
+      const ThephPhaiPhar = new Audio("./Characters theme/ThephPhaiPhar.mp3");
+      const ToiLom = new Audio("./Characters theme/ToiLom.mp3");
+      const Tua3Dau = new Audio("./Characters theme/Tua3Dau.mp3");
 
-        function stopAudio(url) {
-            url.pause();
-        }
+      function playAudio(url) {
+        url.play();
+      }
 
-        function resetAudio(url) {
-            url.currentTime = 0;
-        }
+      function stopAudio(url) {
+        url.pause();
+      }
 
-        function playAll() {
-            IceCamera.play();
-            ChaoWangWonMeka.play();
-            ChefPomNamNgern.play();
-            JaNon.play();
-            KeqingV2.play();
-            KlingDai.play();
-            LomSuarDaeng.play();
-            MarFaiFarV2.play();
-            MorPomKeaw.play();
-            PLiangKlee.play();
-            RedHatWithGun.play();
-            ThephPhaiPhar.play();
-            ToiLom.play();
-            Tua3Dau.play();
-        }
+      function resetAudio(url) {
+        url.currentTime = 0;
+      }
 
-        function stopAll() {
-            IceCamera.pause();
-            ChaoWangWonMeka.pause();
-            ChefPomNamNgern.pause();
-            JaNon.pause();
-            KeqingV2.pause();
-            KlingDai.pause();
-            LomSuarDaeng.pause();
-            MarFaiFarV2.pause();
-            MorPomKeaw.pause();
-            PLiangKlee.pause();
-            RedHatWithGun.pause();
-            ThephPhaiPhar.pause();
-            ToiLom.pause();
-            Tua3Dau.pause();
-        }
+      function playAll() {
+        IceCamera.play();
+        ChaoWangWonMeka.play();
+        ChefPomNamNgern.play();
+        JaNon.play();
+        KeqingV2.play();
+        KlingDai.play();
+        LomSuarDaeng.play();
+        MarFaiFarV2.play();
+        MorPomKeaw.play();
+        PLiangKlee.play();
+        RedHatWithGun.play();
+        ThephPhaiPhar.play();
+        ToiLom.play();
+        Tua3Dau.play();
+      }
 
-        function resetAll() {
-            IceCamera.currentTime = 0;
-            ChaoWangWonMeka.currentTime = 0;
-            ChefPomNamNgern.currentTime = 0;
-            JaNon.currentTime = 0;
-            KeqingV2.currentTime = 0;
-            KlingDai.currentTime = 0;
-            LomSuarDaeng.currentTime = 0;
-            MarFaiFarV2.currentTime = 0;
-            MorPomKeaw.currentTime = 0;
-            PLiangKlee.currentTime = 0;
-            RedHatWithGun.currentTime = 0;
-            ThephPhaiPhar.currentTime = 0;
-            ToiLom.currentTime = 0;
-            Tua3Dau.currentTime = 0;
+      function stopAll() {
+        IceCamera.pause();
+        ChaoWangWonMeka.pause();
+        ChefPomNamNgern.pause();
+        JaNon.pause();
+        KeqingV2.pause();
+        KlingDai.pause();
+        LomSuarDaeng.pause();
+        MarFaiFarV2.pause();
+        MorPomKeaw.pause();
+        PLiangKlee.pause();
+        RedHatWithGun.pause();
+        ThephPhaiPhar.pause();
+        ToiLom.pause();
+        Tua3Dau.pause();
+      }
+
+      function resetAll() {
+        IceCamera.currentTime = 0;
+        ChaoWangWonMeka.currentTime = 0;
+        ChefPomNamNgern.currentTime = 0;
+        JaNon.currentTime = 0;
+        KeqingV2.currentTime = 0;
+        KlingDai.currentTime = 0;
+        LomSuarDaeng.currentTime = 0;
+        MarFaiFarV2.currentTime = 0;
+        MorPomKeaw.currentTime = 0;
+        PLiangKlee.currentTime = 0;
+        RedHatWithGun.currentTime = 0;
+        ThephPhaiPhar.currentTime = 0;
+        ToiLom.currentTime = 0;
+        Tua3Dau.currentTime = 0;
+      }
+      function changeStateFrStart(idy) {
+        const playsvg = document.querySelector("#pl" + idy);
+        const pausesvg = document.querySelector("#pa" + idy);
+
+        pausesvg.setAttribute("fill", "#b8b8b8");
+        playsvg.setAttribute("fill", "#000000");
+      }
+      function changeStateFrStop(idy) {
+        const playsvg = document.querySelector("#pl" + idy);
+        const pausesvg = document.querySelector("#pa" + idy);
+
+        playsvg.setAttribute("fill", "#b8b8b8");
+        pausesvg.setAttribute("fill", "#000000");
+      }
+      function changeStateFrStartAll() {
+        for (let i = 1; i<15;i++) {
+            changeStateFrStart(i.toString());
         }
+      }
+      function changeStateFrStopAll() {
+        for (let i = 1; i<15;i++) {
+            changeStateFrStop(i.toString());
+        }
+      }
     </script>
-    <button onclick="playAll()" class="btn"><img src="./play.svg">Play All</button>
-    <button onclick="stopAll()" class="btn"><img src="./stop.svg">Stop All</button>
-    <button onclick="resetAll()" class="btn"><img src="./skip-backward.svg" class="back">Reset All</button>
-    <hr style="margin-top: 1rem; margin-left: 1rem; width: 16rem;">
-    <button onclick="playAudio(IceCamera)" class="btn"><img src="./play.svg">Play 1</button>
-    <button onclick="stopAudio(IceCamera)" class="btn"><img src="./stop.svg">Stop 1</button>
-    <button onclick="resetAudio(IceCamera)" class="btn"><img src="./skip-backward.svg" class="back">Reset 1</button>
-    <br>
-    <button onclick="playAudio(ChaoWangWonMeka)" class="btn"><img src="./play.svg">Play 2</button>
-    <button onclick="stopAudio(ChaoWangWonMeka)" class="btn"><img src="./stop.svg">Stop 2</button>
-    <button onclick="resetAudio(ChaoWangWonMeka)" class="btn"><img src="./skip-backward.svg" class="back">Reset 2</button>
-    <br>
-    <button onclick="playAudio(ChefPomNamNgern)" class="btn"><img src="./play.svg">Play 3</button>
-    <button onclick="stopAudio(ChefPomNamNgern)" class="btn"><img src="./stop.svg">Stop 3</button>
-    <button onclick="resetAudio(ChefPomNamNgern)" class="btn"><img src="./skip-backward.svg" class="back">Reset 3</button>
-    <br>
-    <button onclick="playAudio(JaNon)" class="btn"><img src="./play.svg">Play 4</button>
-    <button onclick="stopAudio(JaNon)" class="btn"><img src="./stop.svg">Stop 4</button>
-    <button onclick="resetAudio(JaNon)" class="btn"><img src="./skip-backward.svg" class="back">Reset 4</button>
-    <br>
-    <button onclick="playAudio(KeqingV2)" class="btn"><img src="./play.svg">Play 5</button>
-    <button onclick="stopAudio(KeqingV2)" class="btn"><img src="./stop.svg">Stop 5</button>
-    <button onclick="resetAudio(KeqingV2)" class="btn"><img src="./skip-backward.svg" class="back">Reset 5</button>
-    <br>
-    <button onclick="playAudio(KlingDai)" class="btn"><img src="./play.svg">Play 6</button>
-    <button onclick="stopAudio(KlingDai)" class="btn"><img src="./stop.svg">Stop 6</button>
-    <button onclick="resetAudio(KlingDai)" class="btn"><img src="./skip-backward.svg" class="back">Reset 6</button>
-    <br>
-    <button onclick="playAudio(LomSuarDaeng)" class="btn"><img src="./play.svg">Play 7</button>
-    <button onclick="stopAudio(LomSuarDaeng)" class="btn"><img src="./stop.svg">Stop 7</button>
-    <button onclick="resetAudio(LomSuarDaeng)" class="btn"><img src="./skip-backward.svg" class="back">Reset 7</button>
-    <br>
-    <button onclick="playAudio(MarFaiFarV2)" class="btn"><img src="./play.svg">Play 8</button>
-    <button onclick="stopAudio(MarFaiFarV2)" class="btn"><img src="./stop.svg">Stop 8</button>
-    <button onclick="resetAudio(MarFaiFarV2)" class="btn"><img src="./skip-backward.svg" class="back">Reset 8</button>
-    <br>
-    <button onclick="playAudio(MorPomKeaw)" class="btn"><img src="./play.svg">Play 9</button>
-    <button onclick="stopAudio(MorPomKeaw)" class="btn"><img src="./stop.svg">Stop 9</button>
-    <button onclick="resetAudio(MorPomKeaw)" class="btn"><img src="./skip-backward.svg" class="back">Reset 9</button>
-    <br>
-    <button onclick="playAudio(PLiangKlee)" class="btn"><img src="./play.svg">Play 10</button>
-    <button onclick="stopAudio(PLiangKlee)" class="btn"><img src="./stop.svg">Stop 10</button>
-    <button onclick="resetAudio(PLiangKlee)" class="btn"><img src="./skip-backward.svg" class="back">Reset 10</button>
-    <br>
-    <button onclick="playAudio(RedHatWithGun)" class="btn"><img src="./play.svg">Play 11</button>
-    <button onclick="stopAudio(RedHatWithGun)" class="btn"><img src="./stop.svg">Stop 11</button>
-    <button onclick="resetAudio(RedHatWithGun)" class="btn"><img src="./skip-backward.svg" class="back">Reset 11</button>
-    <br>
-    <button onclick="playAudio(ThephPhaiPhar)" class="btn"><img src="./play.svg">Play 12</button>
-    <button onclick="stopAudio(ThephPhaiPhar)" class="btn"><img src="./stop.svg">Stop 12</button>
-    <button onclick="resetAudio(ThephPhaiPhar)" class="btn"><img src="./skip-backward.svg" class="back">Reset 12</button>
-    <br>
-    <button onclick="playAudio(ToiLom)" class="btn"><img src="./play.svg">Play 13</button>
-    <button onclick="stopAudio(ToiLom)" class="btn"><img src="./stop.svg">Stop 13</button>
-    <button onclick="resetAudio(ToiLom)" class="btn"><img src="./skip-backward.svg" class="back">Reset 13</button>
-    <br>
-    <button onclick="playAudio(Tua3Dau)" class="btn"><img src="./play.svg">Play 14</button>
-    <button onclick="stopAudio(Tua3Dau)" class="btn"><img src="./stop.svg">Stop 14</button>
-    <button onclick="resetAudio(Tua3Dau)" class="btn"><img src="./skip-backward.svg" class="back">Reset 14</button>
-    <br>
-</body>
+    <button onclick="playAll(); changeStateFrStartAll();" class="btn">
+      <img src="./play.svg" />Play All
+    </button>
+    <button onclick="stopAll(); changeStateFrStopAll();" class="btn">
+      <img src="./stop.svg" />Stop All
+    </button>
+    <button onclick="resetAll()" class="btn">
+      <img src="./skip-backward.svg" class="back" />Reset All
+    </button>
+    <hr style="margin-top: 1rem; margin-left: 1rem; width: 16rem" />
+
+    <button
+      onclick="playAudio(IceCamera); changeStateFrStart('1');"
+      class="btn"
+    >
+      <img src="./play.svg" />Play 1
+    </button>
+    <button onclick="stopAudio(IceCamera); changeStateFrStop('1')" class="btn">
+      <img src="./stop.svg" />Stop 1
+    </button>
+    <button onclick="resetAudio(IceCamera)" class="btn">
+      <img src="./skip-backward.svg" class="back" />Reset 1
+    </button>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      id="pl1"
+      width="25"
+      height="25"
+      fill="#b8b8b8"
+      class="play"
+      viewBox="0 0 16 16"
+    >
+      <path
+        d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"
+      />
+    </svg>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      id="pa1"
+      width="25"
+      height="25"
+      fill="#000000"
+      class="pause"
+      viewBox="0 0 16 16"
+    >
+      <path
+        d="M5.5 3.5A1.5 1.5 0 0 1 7 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5m5 0A1.5 1.5 0 0 1 12 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5"
+      />
+    </svg>
+    <br />
+    <button
+      onclick="playAudio(ChaoWangWonMeka); changeStateFrStart('2')"
+      class="btn"
+    >
+      <img src="./play.svg" />Play 2
+    </button>
+    <button
+      onclick="stopAudio(ChaoWangWonMeka); changeStateFrStop('2')"
+      class="btn"
+    >
+      <img src="./stop.svg" />Stop 2
+    </button>
+    <button onclick="resetAudio(ChaoWangWonMeka)" class="btn">
+      <img src="./skip-backward.svg" class="back" />Reset 2
+    </button>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      id="pl2"
+      width="25"
+      height="25"
+      fill="#b8b8b8"
+      class="play"
+      viewBox="0 0 16 16"
+    >
+      <path
+        d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"
+      />
+    </svg>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      id="pa2"
+      width="25"
+      height="25"
+      fill="#000000"
+      class="pause"
+      viewBox="0 0 16 16"
+    >
+      <path
+        d="M5.5 3.5A1.5 1.5 0 0 1 7 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5m5 0A1.5 1.5 0 0 1 12 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5"
+      />
+    </svg>
+    <br />
+    <button
+      onclick="playAudio(ChefPomNamNgern); changeStateFrStart('3')"
+      class="btn"
+    >
+      <img src="./play.svg" />Play 3
+    </button>
+    <button
+      onclick="stopAudio(ChefPomNamNgern); changeStateFrStop('3')"
+      class="btn"
+    >
+      <img src="./stop.svg" />Stop 3
+    </button>
+    <button onclick="resetAudio(ChefPomNamNgern)" class="btn">
+      <img src="./skip-backward.svg" class="back" />Reset 3
+    </button>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      id="pl3"
+      width="25"
+      height="25"
+      fill="#b8b8b8"
+      class="play"
+      viewBox="0 0 16 16"
+    >
+      <path
+        d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"
+      />
+    </svg>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      id="pa3"
+      width="25"
+      height="25"
+      fill="#000000"
+      class="pause"
+      viewBox="0 0 16 16"
+    >
+      <path
+        d="M5.5 3.5A1.5 1.5 0 0 1 7 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5m5 0A1.5 1.5 0 0 1 12 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5"
+      />
+    </svg>
+    <br />
+    <button onclick="playAudio(JaNon); changeStateFrStart('4')" class="btn">
+      <img src="./play.svg" />Play 4
+    </button>
+    <button onclick="stopAudio(JaNon); changeStateFrStop('4')" class="btn">
+      <img src="./stop.svg" />Stop 4
+    </button>
+    <button onclick="resetAudio(JaNon)" class="btn">
+      <img src="./skip-backward.svg" class="back" />Reset 4
+    </button>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      id="pl4"
+      width="25"
+      height="25"
+      fill="#b8b8b8"
+      class="play"
+      viewBox="0 0 16 16"
+    >
+      <path
+        d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"
+      />
+    </svg>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      id="pa4"
+      width="25"
+      height="25"
+      fill="#000000"
+      class="pause"
+      viewBox="0 0 16 16"
+    >
+      <path
+        d="M5.5 3.5A1.5 1.5 0 0 1 7 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5m5 0A1.5 1.5 0 0 1 12 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5"
+      />
+    </svg>
+    <br />
+    <button onclick="playAudio(KeqingV2); changeStateFrStart('5')" class="btn">
+      <img src="./play.svg" />Play 5
+    </button>
+    <button onclick="stopAudio(KeqingV2); changeStateFrStop('5')" class="btn">
+      <img src="./stop.svg" />Stop 5
+    </button>
+    <button onclick="resetAudio(KeqingV2)" class="btn">
+      <img src="./skip-backward.svg" class="back" />Reset 5
+    </button>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      id="pl5"
+      width="25"
+      height="25"
+      fill="#b8b8b8"
+      class="play"
+      viewBox="0 0 16 16"
+    >
+      <path
+        d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"
+      />
+    </svg>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      id="pa5"
+      width="25"
+      height="25"
+      fill="#000000"
+      class="pause"
+      viewBox="0 0 16 16"
+    >
+      <path
+        d="M5.5 3.5A1.5 1.5 0 0 1 7 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5m5 0A1.5 1.5 0 0 1 12 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5"
+      />
+    </svg>
+    <br />
+    <button onclick="playAudio(KlingDai); changeStateFrStart('6')" class="btn">
+      <img src="./play.svg" />Play 6
+    </button>
+    <button onclick="stopAudio(KlingDai); changeStateFrStop('6')" class="btn">
+      <img src="./stop.svg" />Stop 6
+    </button>
+    <button onclick="resetAudio(KlingDai)" class="btn">
+      <img src="./skip-backward.svg" class="back" />Reset 6
+    </button>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      id="pl6"
+      width="25"
+      height="25"
+      fill="#b8b8b8"
+      class="play"
+      viewBox="0 0 16 16"
+    >
+      <path
+        d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"
+      />
+    </svg>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      id="pa6"
+      width="25"
+      height="25"
+      fill="#000000"
+      class="pause"
+      viewBox="0 0 16 16"
+    >
+      <path
+        d="M5.5 3.5A1.5 1.5 0 0 1 7 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5m5 0A1.5 1.5 0 0 1 12 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5"
+      />
+    </svg>
+    <br />
+    <button
+      onclick="playAudio(LomSuarDaeng); changeStateFrStart('7')"
+      class="btn"
+    >
+      <img src="./play.svg" />Play 7
+    </button>
+    <button
+      onclick="stopAudio(LomSuarDaeng); changeStateFrStop('7')"
+      class="btn"
+    >
+      <img src="./stop.svg" />Stop 7
+    </button>
+    <button onclick="resetAudio(LomSuarDaeng)" class="btn">
+      <img src="./skip-backward.svg" class="back" />Reset 7
+    </button>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      id="pl7"
+      width="25"
+      height="25"
+      fill="#b8b8b8"
+      class="play"
+      viewBox="0 0 16 16"
+    >
+      <path
+        d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"
+      />
+    </svg>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      id="pa7"
+      width="25"
+      height="25"
+      fill="#000000"
+      class="pause"
+      viewBox="0 0 16 16"
+    >
+      <path
+        d="M5.5 3.5A1.5 1.5 0 0 1 7 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5m5 0A1.5 1.5 0 0 1 12 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5"
+      />
+    </svg>
+    <br />
+    <button
+      onclick="playAudio(MarFaiFarV2); changeStateFrStart('8')"
+      class="btn"
+    >
+      <img src="./play.svg" />Play 8
+    </button>
+    <button
+      onclick="stopAudio(MarFaiFarV2); changeStateFrStop('8')"
+      class="btn"
+    >
+      <img src="./stop.svg" />Stop 8
+    </button>
+    <button onclick="resetAudio(MarFaiFarV2)" class="btn">
+      <img src="./skip-backward.svg" class="back" />Reset 8
+    </button>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      id="pl8"
+      width="25"
+      height="25"
+      fill="#b8b8b8"
+      class="play"
+      viewBox="0 0 16 16"
+    >
+      <path
+        d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"
+      />
+    </svg>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      id="pa8"
+      width="25"
+      height="25"
+      fill="#000000"
+      class="pause"
+      viewBox="0 0 16 16"
+    >
+      <path
+        d="M5.5 3.5A1.5 1.5 0 0 1 7 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5m5 0A1.5 1.5 0 0 1 12 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5"
+      />
+    </svg>
+    <br />
+    <button
+      onclick="playAudio(MorPomKeaw); changeStateFrStart('9')"
+      class="btn"
+    >
+      <img src="./play.svg" />Play 9
+    </button>
+    <button onclick="stopAudio(MorPomKeaw); changeStateFrStop('9')" class="btn">
+      <img src="./stop.svg" />Stop 9
+    </button>
+    <button onclick="resetAudio(MorPomKeaw)" class="btn">
+      <img src="./skip-backward.svg" class="back" />Reset 9
+    </button>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      id="pl9"
+      width="25"
+      height="25"
+      fill="#b8b8b8"
+      class="play"
+      viewBox="0 0 16 16"
+    >
+      <path
+        d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"
+      />
+    </svg>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      id="pa9"
+      width="25"
+      height="25"
+      fill="#000000"
+      class="pause"
+      viewBox="0 0 16 16"
+    >
+      <path
+        d="M5.5 3.5A1.5 1.5 0 0 1 7 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5m5 0A1.5 1.5 0 0 1 12 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5"
+      />
+    </svg>
+    <br />
+    <button
+      onclick="playAudio(PLiangKlee); changeStateFrStart('10')"
+      class="btn"
+    >
+      <img src="./play.svg" />Play 10
+    </button>
+    <button
+      onclick="stopAudio(PLiangKlee); changeStateFrStop('10')"
+      class="btn"
+    >
+      <img src="./stop.svg" />Stop 10
+    </button>
+    <button onclick="resetAudio(PLiangKlee)" class="btn">
+      <img src="./skip-backward.svg" class="back" />Reset 10
+    </button>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      id="pl10"
+      width="25"
+      height="25"
+      fill="#b8b8b8"
+      class="play"
+      viewBox="0 0 16 16"
+    >
+      <path
+        d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"
+      />
+    </svg>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      id="pa10"
+      width="25"
+      height="25"
+      fill="#000000"
+      class="pause"
+      viewBox="0 0 16 16"
+    >
+      <path
+        d="M5.5 3.5A1.5 1.5 0 0 1 7 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5m5 0A1.5 1.5 0 0 1 12 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5"
+      />
+    </svg>
+    <br />
+    <button
+      onclick="playAudio(RedHatWithGun); changeStateFrStart('11')"
+      class="btn"
+    >
+      <img src="./play.svg" />Play 11
+    </button>
+    <button
+      onclick="stopAudio(RedHatWithGun); changeStateFrStop('11')"
+      class="btn"
+    >
+      <img src="./stop.svg" />Stop 11
+    </button>
+    <button onclick="resetAudio(RedHatWithGun)" class="btn">
+      <img src="./skip-backward.svg" class="back" />Reset 11
+    </button>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      id="pl11"
+      width="25"
+      height="25"
+      fill="#b8b8b8"
+      class="play"
+      viewBox="0 0 16 16"
+    >
+      <path
+        d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"
+      />
+    </svg>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      id="pa11"
+      width="25"
+      height="25"
+      fill="#000000"
+      class="pause"
+      viewBox="0 0 16 16"
+    >
+      <path
+        d="M5.5 3.5A1.5 1.5 0 0 1 7 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5m5 0A1.5 1.5 0 0 1 12 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5"
+      />
+    </svg>
+    <br />
+    <button
+      onclick="playAudio(ThephPhaiPhar); changeStateFrStart('12')"
+      class="btn"
+    >
+      <img src="./play.svg" />Play 12
+    </button>
+    <button
+      onclick="stopAudio(ThephPhaiPhar); changeStateFrStop('12')"
+      class="btn"
+    >
+      <img src="./stop.svg" />Stop 12
+    </button>
+    <button onclick="resetAudio(ThephPhaiPhar)" class="btn">
+      <img src="./skip-backward.svg" class="back" />Reset 12
+    </button>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      id="pl12"
+      width="25"
+      height="25"
+      fill="#b8b8b8"
+      class="play"
+      viewBox="0 0 16 16"
+    >
+      <path
+        d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"
+      />
+    </svg>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      id="pa12"
+      width="25"
+      height="25"
+      fill="#000000"
+      class="pause"
+      viewBox="0 0 16 16"
+    >
+      <path
+        d="M5.5 3.5A1.5 1.5 0 0 1 7 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5m5 0A1.5 1.5 0 0 1 12 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5"
+      />
+    </svg>
+    <br />
+    <button onclick="playAudio(ToiLom); changeStateFrStart('13')" class="btn">
+      <img src="./play.svg" />Play 13
+    </button>
+    <button onclick="stopAudio(ToiLom); changeStateFrStop('13')" class="btn">
+      <img src="./stop.svg" />Stop 13
+    </button>
+    <button onclick="resetAudio(ToiLom)" class="btn">
+      <img src="./skip-backward.svg" class="back" />Reset 13
+    </button>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      id="pl13"
+      width="25"
+      height="25"
+      fill="#b8b8b8"
+      class="play"
+      viewBox="0 0 16 16"
+    >
+      <path
+        d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"
+      />
+    </svg>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      id="pa13"
+      width="25"
+      height="25"
+      fill="#000000"
+      class="pause"
+      viewBox="0 0 16 16"
+    >
+      <path
+        d="M5.5 3.5A1.5 1.5 0 0 1 7 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5m5 0A1.5 1.5 0 0 1 12 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5"
+      />
+    </svg>
+    <br />
+    <button onclick="playAudio(Tua3Dau); changeStateFrStart('14')" class="btn">
+      <img src="./play.svg" />Play 14
+    </button>
+    <button onclick="stopAudio(Tua3Dau); changeStateFrStop('14')" class="btn">
+      <img src="./stop.svg" />Stop 14
+    </button>
+    <button onclick="resetAudio(Tua3Dau)" class="btn">
+      <img src="./skip-backward.svg" class="back" />Reset 14
+    </button>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      id="pl14"
+      width="25"
+      height="25"
+      fill="#b8b8b8"
+      class="play"
+      viewBox="0 0 16 16"
+    >
+      <path
+        d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"
+      />
+    </svg>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      id="pa14"
+      width="25"
+      height="25"
+      fill="#000000"
+      class="pause"
+      viewBox="0 0 16 16"
+    >
+      <path
+        d="M5.5 3.5A1.5 1.5 0 0 1 7 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5m5 0A1.5 1.5 0 0 1 12 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5"
+      />
+    </svg>
+    <br />
+  </body>
 </html>
