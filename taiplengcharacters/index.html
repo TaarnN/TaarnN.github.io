@@ -43,6 +43,7 @@
       const ThephPhaiPhar = new Audio("./Characters theme/ThephPhaiPhar.mp3");
       const ToiLom = new Audio("./Characters theme/ToiLom.mp3");
       const Tua3Dau = new Audio("./Characters theme/Tua3Dau.mp3");
+      const OniBaPlang = new Audio("./Characters theme/OniBaPlang.mp3");
 
       function playAudio(url) {
         url.play();
@@ -71,6 +72,7 @@
         ThephPhaiPhar.play();
         ToiLom.play();
         Tua3Dau.play();
+        OniBaPlang.play();
       }
 
       function stopAll() {
@@ -88,6 +90,7 @@
         ThephPhaiPhar.pause();
         ToiLom.pause();
         Tua3Dau.pause();
+        OniBaPlang.pause();
       }
 
       function resetAll() {
@@ -105,6 +108,7 @@
         ThephPhaiPhar.currentTime = 0;
         ToiLom.currentTime = 0;
         Tua3Dau.currentTime = 0;
+        OniBaPlang.currentTime = 0;
       }
       function changeStateFrStart(idy) {
         const playsvg = document.querySelector("#pl" + idy);
@@ -121,13 +125,13 @@
         pausesvg.setAttribute("fill", "#000000");
       }
       function changeStateFrStartAll() {
-        for (let i = 1; i<15;i++) {
-            changeStateFrStart(i.toString());
+        for (let i = 1; i < 16; i++) {
+          changeStateFrStart(i.toString());
         }
       }
       function changeStateFrStopAll() {
-        for (let i = 1; i<15;i++) {
-            changeStateFrStop(i.toString());
+        for (let i = 1; i < 16; i++) {
+          changeStateFrStop(i.toString());
         }
       }
     </script>
@@ -683,6 +687,48 @@
     <svg
       xmlns="http://www.w3.org/2000/svg"
       id="pa14"
+      width="25"
+      height="25"
+      fill="#000000"
+      class="pause"
+      viewBox="0 0 16 16"
+    >
+      <path
+        d="M5.5 3.5A1.5 1.5 0 0 1 7 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5m5 0A1.5 1.5 0 0 1 12 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5"
+      />
+    </svg>
+    <br />
+    <button
+      onclick="playAudio(OniBaPlang); changeStateFrStart('15')"
+      class="btn"
+    >
+      <img src="./play.svg" />Play 15
+    </button>
+    <button
+      onclick="stopAudio(OniBaPlang); changeStateFrStop('15')"
+      class="btn"
+    >
+      <img src="./stop.svg" />Stop 15
+    </button>
+    <button onclick="resetAudio(OniBaPlang)" class="btn">
+      <img src="./skip-backward.svg" class="back" />Reset 15
+    </button>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      id="pl15"
+      width="25"
+      height="25"
+      fill="#b8b8b8"
+      class="play"
+      viewBox="0 0 16 16"
+    >
+      <path
+        d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"
+      />
+    </svg>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      id="pa15"
       width="25"
       height="25"
       fill="#000000"
