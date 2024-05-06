@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Buttonyer Beta 0.0.1 Buttons</title>
-    <link rel="icon" type="image/x-icon" href="https://taarnn.github.io/buttonyer/buttonyer-beta0.0.1/logo.001.png" />
+    <link rel="icon" id="iconlogo" type="image/x-icon" href="https://www.taarnn.github.io/buttonyer/buttonyer-beta0.0.1/logo.001.png" />
     <link
       rel="stylesheet"
       href="https://taarnn.github.io/buttonyer/buttonyer-beta0.0.1.css"
@@ -29,7 +29,7 @@
   </head>
   <body>
     <div class="flexContainerColumn buttonSpacingContainer ySpacing">
-      <img src="https://taarnn.github.io/buttonyer/buttonyer-beta0.0.1/alogo.png" width="360px" />
+      <img id="alogo" src="https://www.taarnn.github.io/buttonyer/buttonyer-beta0.0.1/alogo.png" width="360px" />
       <h1 style="font-size: 4rem; font-weight: 900; color: #0a80e0">
         Buttonyer
       </h1>
@@ -83,5 +83,8 @@
 
       <div class="hr"></div>
     </div>
+    <script>
+      document.getElementById("iconlogo").href = "https://taarnn.github.io/buttonyer/buttonyer-beta0.0.1/logo.001.png";
+    </script>
   </body>
 </html>
