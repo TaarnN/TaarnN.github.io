@@ -1,0 +1,1282 @@
+:root {
+    --mainc: #0a80e0;
+    --maincd: #0072cf;
+    --mains: #0a48b1;
+    /**/
+    --grayc: #c7c7c7;
+    --graycd: #b3b3b3;
+    --grays: #9b9999;
+    /**/
+    --redc: #d51919;
+    --redcd: #a21010;
+    --reds: #760d0d;
+    /**/
+    --orangec: #e27f0e;
+    --orangecd: #c96b00;
+    --oranges: #b0630c;
+    /**/
+    --yellowc: #f5bb1a;
+    --yellowcd: #d8a900;
+    --yellows: #af8900;
+    /**/
+    --greenc: #25b700;
+    --greencd: #1f9701;
+    --greens: #218009;
+    /**/
+    --tealc: #0ecd9a;
+    --tealcd: #0aad82;
+    --teals: #0d9873;
+    /**/
+    --skybluec: #08bfed;
+    --skybluecd: #11a7cd;
+    --skyblues: #0086a8;
+    /**/
+    --purplec: #6806d0;
+    --purplecd: #5b06b6;
+    --purples: #410483;
+    /**/
+    --pinkc: #d907cf;
+    --pinkcd: #bf0ab6;
+    --pinks: #a6049e;
+    /**/
+    --lightc: #e8e8e8;
+    --lightcd: #d9d9d9;
+    --lights: #d1d0d0;
+    /**/
+    --darkc: #2d2c2c;
+    --darkcd: #1d1d1d;
+    --darks: #0f0f0f;
+    /**/
+  }
+  
+  .lightHr {
+    height: 0.5px;
+    background-color: rgb(189, 189, 189);
+    width: 100%;
+  }
+  
+  .mediumHr {
+    height: 3px;
+    background-color: rgb(57, 57, 57);
+    width: 100%;
+  }
+  
+  .boldHr {
+    height: 7px;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+  }
+  
+  /*==========================*/
+  /*==========================*/
+  
+  .mainButton {
+    border: none;
+    cursor: pointer;
+    color: white;
+    background-color: var(--mainc);
+    width: fit-content;
+    padding-left: 1.7rem;
+    padding-right: 1.7rem;
+    height: 2.5rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: inline-flex;
+    border-radius: 10px;
+    transition-duration: 180ms;
+    letter-spacing: 0.5px;
+    box-shadow: var(--mains) -5px 0px 2px;
+  }
+  
+  .mainButton:hover {
+    letter-spacing: 1.2px;
+    background-color: var(--maincd);
+    box-shadow: var(--mains) -3px 0px 2px;
+  }
+  
+  .mainButton:active {
+    letter-spacing: 0.3px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  
+  .grayButton {
+    border: none;
+    cursor: pointer;
+    color: black;
+    background-color: var(--grayc);
+    width: fit-content;
+    padding-left: 1.7rem;
+    padding-right: 1.7rem;
+    height: 2.5rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: inline-flex;
+    border-radius: 10px;
+    transition-duration: 180ms;
+    letter-spacing: 0.5px;
+    box-shadow: var(--grays) -5px 0px 2px;
+  }
+  
+  .grayButton:hover {
+    letter-spacing: 1.2px;
+    background-color: var(--graycd);
+    box-shadow: var(--grays) -3px 0px 2px;
+  }
+  
+  .grayButton:active {
+    letter-spacing: 0.3px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  
+  .redButton {
+    border: none;
+    cursor: pointer;
+    color: white;
+    background-color: var(--redc);
+    width: fit-content;
+    padding-left: 1.7rem;
+    padding-right: 1.7rem;
+    height: 2.5rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: inline-flex;
+    border-radius: 10px;
+    transition-duration: 180ms;
+    letter-spacing: 0.5px;
+    box-shadow: var(--reds) -5px 0px 2px;
+  }
+  
+  .redButton:hover {
+    letter-spacing: 1.2px;
+    background-color: var(--redcd);
+    box-shadow: var(--reds) -3px 0px 2px;
+  }
+  
+  .redButton:active {
+    letter-spacing: 0.3px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  
+  .orangeButton {
+    border: none;
+    cursor: pointer;
+    color: white;
+    background-color: var(--orangec);
+    width: fit-content;
+    padding-left: 1.7rem;
+    padding-right: 1.7rem;
+    height: 2.5rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: inline-flex;
+    border-radius: 10px;
+    transition-duration: 180ms;
+    letter-spacing: 0.5px;
+    box-shadow: var(--oranges) -5px 0px 2px;
+  }
+  
+  .orangeButton:hover {
+    letter-spacing: 1.2px;
+    background-color: var(--orangecd);
+    box-shadow: var(--oranges) -3px 0px 2px;
+  }
+  
+  .orangeButton:active {
+    letter-spacing: 0.3px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  
+  .yellowButton {
+    border: none;
+    cursor: pointer;
+    color: black;
+    background-color: var(--yellowc);
+    width: fit-content;
+    padding-left: 1.7rem;
+    padding-right: 1.7rem;
+    height: 2.5rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: inline-flex;
+    border-radius: 10px;
+    transition-duration: 180ms;
+    letter-spacing: 0.5px;
+    box-shadow: var(--yellows) -5px 0px 2px;
+  }
+  
+  .yellowButton:hover {
+    letter-spacing: 1.2px;
+    background-color: var(--yellowcd);
+    box-shadow: var(--yellows) -3px 0px 2px;
+  }
+  
+  .yellowButton:active {
+    letter-spacing: 0.3px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  
+  .greenButton {
+    border: none;
+    cursor: pointer;
+    color: white;
+    background-color: var(--greenc);
+    width: fit-content;
+    padding-left: 1.7rem;
+    padding-right: 1.7rem;
+    height: 2.5rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: inline-flex;
+    border-radius: 10px;
+    transition-duration: 180ms;
+    letter-spacing: 0.5px;
+    box-shadow: var(--greens) -5px 0px 2px;
+  }
+  
+  .greenButton:hover {
+    letter-spacing: 1.2px;
+    background-color: var(--greencd);
+    box-shadow: var(--greens) -3px 0px 2px;
+  }
+  
+  .greenButton:active {
+    letter-spacing: 0.3px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  
+  .tealButton {
+    border: none;
+    cursor: pointer;
+    color: black;
+    background-color: var(--tealc);
+    width: fit-content;
+    padding-left: 1.7rem;
+    padding-right: 1.7rem;
+    height: 2.5rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: inline-flex;
+    border-radius: 10px;
+    transition-duration: 180ms;
+    letter-spacing: 0.5px;
+    box-shadow: var(--teals) -5px 0px 2px;
+  }
+  
+  .tealButton:hover {
+    letter-spacing: 1.2px;
+    background-color: var(--tealcd);
+    box-shadow: var(--teals) -3px 0px 2px;
+  }
+  
+  .tealButton:active {
+    letter-spacing: 0.3px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  
+  .skyblueButton {
+    border: none;
+    cursor: pointer;
+    color: black;
+    background-color: var(--skybluec);
+    width: fit-content;
+    padding-left: 1.7rem;
+    padding-right: 1.7rem;
+    height: 2.5rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: inline-flex;
+    border-radius: 10px;
+    transition-duration: 180ms;
+    letter-spacing: 0.5px;
+    box-shadow: var(--skyblues) -5px 0px 2px;
+  }
+  
+  .skyblueButton:hover {
+    letter-spacing: 1.2px;
+    background-color: var(--skybluecd);
+    box-shadow: var(--skyblues) -3px 0px 2px;
+  }
+  
+  .skyblueButton:active {
+    letter-spacing: 0.3px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  
+  .purpleButton {
+    border: none;
+    cursor: pointer;
+    color: white;
+    background-color: var(--purplec);
+    width: fit-content;
+    padding-left: 1.7rem;
+    padding-right: 1.7rem;
+    height: 2.5rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: inline-flex;
+    border-radius: 10px;
+    transition-duration: 180ms;
+    letter-spacing: 0.5px;
+    box-shadow: var(--purples) -5px 0px 2px;
+  }
+  
+  .purpleButton:hover {
+    letter-spacing: 1.2px;
+    background-color: var(--purplecd);
+    box-shadow: var(--purples) -3px 0px 2px;
+  }
+  
+  .purpleButton:active {
+    letter-spacing: 0.3px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  
+  .pinkButton {
+    border: none;
+    cursor: pointer;
+    color: white;
+    background-color: var(--pinkc);
+    width: fit-content;
+    padding-left: 1.7rem;
+    padding-right: 1.7rem;
+    height: 2.5rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: inline-flex;
+    border-radius: 10px;
+    transition-duration: 180ms;
+    letter-spacing: 0.5px;
+    box-shadow: var(--pinks) -5px 0px 2px;
+  }
+  
+  .pinkButton:hover {
+    letter-spacing: 1.2px;
+    background-color: var(--pinkcd);
+    box-shadow: var(--pinks) -3px 0px 2px;
+  }
+  
+  .pinkButton:active {
+    letter-spacing: 0.3px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  
+  .lightButton {
+    border: none;
+    cursor: pointer;
+    color: black;
+    background-color: var(--lightc);
+    width: fit-content;
+    padding-left: 1.7rem;
+    padding-right: 1.7rem;
+    height: 2.5rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: inline-flex;
+    border-radius: 10px;
+    transition-duration: 180ms;
+    letter-spacing: 0.5px;
+    box-shadow: var(--lights) -5px 0px 2px;
+  }
+  
+  .lightButton:hover {
+    letter-spacing: 1.2px;
+    background-color: var(--lightcd);
+    box-shadow: var(--lights) -3px 0px 2px;
+  }
+  
+  .lightButton:active {
+    letter-spacing: 0.3px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  
+  .darkButton {
+    border: none;
+    cursor: pointer;
+    color: white;
+    background-color: var(--darkc);
+    width: fit-content;
+    padding-left: 1.7rem;
+    padding-right: 1.7rem;
+    height: 2.5rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: inline-flex;
+    border-radius: 10px;
+    transition-duration: 180ms;
+    letter-spacing: 0.5px;
+    box-shadow: var(--darks) -5px 0px 2px;
+  }
+  
+  .darkButton:hover {
+    letter-spacing: 1.2px;
+    background-color: var(--darkcd);
+    box-shadow: var(--darks) -3px 0px 2px;
+  }
+  
+  .darkButton:active {
+    letter-spacing: 0.3px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  
+  /*==============================*/
+  
+  .mainOutlineButton {
+    cursor: pointer;
+    color: var(--mainc);
+    background-color: transparent;
+    width: fit-content;
+    padding-left: 1.7rem;
+    padding-right: 1.7rem;
+    height: 2.5rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: inline-flex;
+    border-radius: 10px;
+    transition-duration: 180ms;
+    letter-spacing: 0.5px;
+    box-shadow: var(--mains) -3px 0px 2px;
+    border: var(--mainc);
+    border-width: 1px;
+    border-style: solid;
+  }
+  
+  .mainOutlineButton:hover {
+    letter-spacing: 1.2px;
+    box-shadow: var(--mains) -2px 0px 2px;
+  }
+  
+  .mainOutlineButton:active {
+    letter-spacing: 0.3px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  
+  .grayOutlineButton {
+    cursor: pointer;
+    color: rgb(92, 92, 92);
+    background-color: transparent;
+    width: fit-content;
+    padding-left: 1.7rem;
+    padding-right: 1.7rem;
+    height: 2.5rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: inline-flex;
+    border-radius: 10px;
+    transition-duration: 180ms;
+    letter-spacing: 0.5px;
+    box-shadow: var(--grays) -3px 0px 2px;
+    border: var(--grayc);
+    border-width: 1px;
+    border-style: solid;
+  }
+  
+  .grayOutlineButton:hover {
+    letter-spacing: 1.2px;
+    box-shadow: var(--grays) -2px 0px 2px;
+  }
+  
+  .grayOutlineButton:active {
+    letter-spacing: 0.3px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  
+  .redOutlineButton {
+    cursor: pointer;
+    color: var(--redc);
+    background-color: transparent;
+    width: fit-content;
+    padding-left: 1.7rem;
+    padding-right: 1.7rem;
+    height: 2.5rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: inline-flex;
+    border-radius: 10px;
+    transition-duration: 180ms;
+    letter-spacing: 0.5px;
+    box-shadow: var(--reds) -3px 0px 2px;
+    border: var(--redc);
+    border-width: 1px;
+    border-style: solid;
+  }
+  
+  .redOutlineButton:hover {
+    letter-spacing: 1.2px;
+    box-shadow: var(--reds) -2px 0px 2px;
+  }
+  
+  .redOutlineButton:active {
+    letter-spacing: 0.3px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  
+  .orangeOutlineButton {
+    cursor: pointer;
+    color: var(--orangec);
+    background-color: transparent;
+    width: fit-content;
+    padding-left: 1.7rem;
+    padding-right: 1.7rem;
+    height: 2.5rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: inline-flex;
+    border-radius: 10px;
+    transition-duration: 180ms;
+    letter-spacing: 0.5px;
+    box-shadow: var(--oranges) -3px 0px 2px;
+    border: var(--orangec);
+    border-width: 1px;
+    border-style: solid;
+  }
+  
+  .orangeOutlineButton:hover {
+    letter-spacing: 1.2px;
+    box-shadow: var(--oranges) -2px 0px 2px;
+  }
+  
+  .orangeOutlineButton:active {
+    letter-spacing: 0.3px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  
+  .yellowOutlineButton {
+    cursor: pointer;
+    color: var(--yellowc);
+    background-color: transparent;
+    width: fit-content;
+    padding-left: 1.7rem;
+    padding-right: 1.7rem;
+    height: 2.5rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: inline-flex;
+    border-radius: 10px;
+    transition-duration: 180ms;
+    letter-spacing: 0.5px;
+    box-shadow: var(--yellows) -3px 0px 2px;
+    border: var(--yellowc);
+    border-width: 1px;
+    border-style: solid;
+  }
+  
+  .yellowOutlineButton:hover {
+    letter-spacing: 1.2px;
+    box-shadow: var(--yellows) -2px 0px 2px;
+  }
+  
+  .yellowOutlineButton:active {
+    letter-spacing: 0.3px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  
+  .greenOutlineButton {
+    cursor: pointer;
+    color: var(--greenc);
+    background-color: transparent;
+    width: fit-content;
+    padding-left: 1.7rem;
+    padding-right: 1.7rem;
+    height: 2.5rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: inline-flex;
+    border-radius: 10px;
+    transition-duration: 180ms;
+    letter-spacing: 0.5px;
+    box-shadow: var(--greens) -3px 0px 2px;
+    border: var(--greenc);
+    border-width: 1px;
+    border-style: solid;
+  }
+  
+  .greenOutlineButton:hover {
+    letter-spacing: 1.2px;
+    box-shadow: var(--greens) -2px 0px 2px;
+  }
+  
+  .greenOutlineButton:active {
+    letter-spacing: 0.3px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  
+  .tealOutlineButton {
+    cursor: pointer;
+    color: var(--tealc);
+    background-color: transparent;
+    width: fit-content;
+    padding-left: 1.7rem;
+    padding-right: 1.7rem;
+    height: 2.5rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: inline-flex;
+    border-radius: 10px;
+    transition-duration: 180ms;
+    letter-spacing: 0.5px;
+    box-shadow: var(--teals) -3px 0px 2px;
+    border: var(--tealc);
+    border-width: 1px;
+    border-style: solid;
+  }
+  
+  .tealOutlineButton:hover {
+    letter-spacing: 1.2px;
+    box-shadow: var(--teals) -2px 0px 2px;
+  }
+  
+  .tealOutlineButton:active {
+    letter-spacing: 0.3px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  
+  .skyblueOutlineButton {
+    cursor: pointer;
+    color: var(--skybluec);
+    background-color: transparent;
+    width: fit-content;
+    padding-left: 1.7rem;
+    padding-right: 1.7rem;
+    height: 2.5rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: inline-flex;
+    border-radius: 10px;
+    transition-duration: 180ms;
+    letter-spacing: 0.5px;
+    box-shadow: var(--skyblues) -3px 0px 2px;
+    border: var(--skybluec);
+    border-width: 1px;
+    border-style: solid;
+  }
+  
+  .skyblueOutlineButton:hover {
+    letter-spacing: 1.2px;
+    box-shadow: var(--skyblues) -2px 0px 2px;
+  }
+  
+  .skyblueOutlineButton:active {
+    letter-spacing: 0.3px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  
+  .purpleOutlineButton {
+    cursor: pointer;
+    color: var(--purplec);
+    background-color: transparent;
+    width: fit-content;
+    padding-left: 1.7rem;
+    padding-right: 1.7rem;
+    height: 2.5rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: inline-flex;
+    border-radius: 10px;
+    transition-duration: 180ms;
+    letter-spacing: 0.5px;
+    box-shadow: var(--purples) -3px 0px 2px;
+    border: var(--purplec);
+    border-width: 1px;
+    border-style: solid;
+  }
+  
+  .purpleOutlineButton:hover {
+    letter-spacing: 1.2px;
+    box-shadow: var(--purples) -2px 0px 2px;
+  }
+  
+  .purpleOutlineButton:active {
+    letter-spacing: 0.3px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  
+  .pinkOutlineButton {
+    cursor: pointer;
+    color: var(--pinkc);
+    background-color: transparent;
+    width: fit-content;
+    padding-left: 1.7rem;
+    padding-right: 1.7rem;
+    height: 2.5rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: inline-flex;
+    border-radius: 10px;
+    transition-duration: 180ms;
+    letter-spacing: 0.5px;
+    box-shadow: var(--pinks) -3px 0px 2px;
+    border: var(--pinkc);
+    border-width: 1px;
+    border-style: solid;
+  }
+  
+  .pinkOutlineButton:hover {
+    letter-spacing: 1.2px;
+    box-shadow: var(--pinks) -2px 0px 2px;
+  }
+  
+  .pinkOutlineButton:active {
+    letter-spacing: 0.3px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  
+  .lightOutlineButton {
+    cursor: pointer;
+    color: var(--lights);
+    background-color: transparent;
+    width: fit-content;
+    padding-left: 1.7rem;
+    padding-right: 1.7rem;
+    height: 2.5rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: inline-flex;
+    border-radius: 10px;
+    transition-duration: 180ms;
+    letter-spacing: 0.5px;
+    box-shadow: var(--lights) -3px 0px 2px;
+    border: var(--lightc);
+    border-width: 1px;
+    border-style: solid;
+  }
+  
+  .lightOutlineButton:hover {
+    letter-spacing: 1.2px;
+    box-shadow: var(--lights) -2px 0px 2px;
+  }
+  
+  .lightOutlineButton:active {
+    letter-spacing: 0.3px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  
+  .darkOutlineButton {
+    cursor: pointer;
+    color: var(--darkc);
+    background-color: transparent;
+    width: fit-content;
+    padding-left: 1.7rem;
+    padding-right: 1.7rem;
+    height: 2.5rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: inline-flex;
+    border-radius: 10px;
+    transition-duration: 180ms;
+    letter-spacing: 0.5px;
+    box-shadow: var(--darks) -3px 0px 2px;
+    border: var(--darkc);
+    border-width: 1px;
+    border-style: solid;
+  }
+  
+  .darkOutlineButton:hover {
+    letter-spacing: 1.2px;
+    box-shadow: var(--darks) -2px 0px 2px;
+  }
+  
+  .darkOutlineButton:active {
+    letter-spacing: 0.3px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  
+  /*================================*/
+  /*================================*/
+  
+  .container {
+    padding-left: 6%;
+    padding-right: 6%;
+    margin: auto;
+  }
+  
+  .flexContainerColumn {
+    padding-left: 6vw;
+    padding-right: 6vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .flexContainerRow {
+    padding-left: 6vw;
+    padding-right: 6vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  
+  .flexContainerColumnReverse {
+    padding-left: 6vw;
+    padding-right: 6vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+  
+  .flexContainerRowReverse {
+    padding-left: 6vw;
+    padding-right: 6vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+  
+  .spacingContainer > * {
+    margin: 0.5rem;
+  }
+  
+  .buttonSpacingContainer > button {
+    margin: 0.5rem;
+  }
+  
+  .buttonSpacingContainer > button {
+    margin: 0.5rem;
+  }
+  
+  .divSpacingContainer > div {
+    margin: 0.5rem;
+  }
+  
+  .textSpacingContainer > p {
+    margin: 0.5rem;
+  }
+  
+  .textSpacingContainer > h1 {
+    margin: 0.5rem;
+  }
+  
+  .textSpacingContainer > h2 {
+    margin: 0.5rem;
+  }
+  
+  .textSpacingContainer > h3 {
+    margin: 0.5rem;
+  }
+  
+  .textSpacingContainer > h4 {
+    margin: 0.5rem;
+  }
+  
+  .textSpacingContainer > h5 {
+    margin: 0.5rem;
+  }
+  
+  .textSpacingContainer > h6 {
+    margin: 0.5rem;
+  }
+  
+  .imageSpacingContainer > img {
+    margin: 0.5rem;
+  }
+  
+  .ySpacing {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .xSpacing {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  
+  .Spacing {
+    margin: 1rem;
+  }
+  
+  .atLeft {
+    display: flex;
+    justify-content: left;
+  }
+  
+  .atCenter {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .atRight {
+    display: flex;
+    justify-content: right;
+  }
+  
+  /*=======================*/
+  /*=======================*/
+  
+  .textAtLeft {
+    text-align: left;
+  }
+  
+  .textAtCenter {
+    text-align: center;
+  }
+  
+  .textAtRight {
+    text-align: right;
+  }
+  
+  
+  
+  /*=======================*/
+  /*=======================*/
+  
+  .examBox {
+    background-color: transparent;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    border-radius: 10px;
+    width: 5rem;
+    height: 5rem;
+  }
+  
+  .examCircle {
+    background-color: transparent;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+  }
+  
+  /*========================*/
+  /*========================*/
+  
+  .backgroundMain {
+    background-color: var(--mainc);
+  }
+  
+  .backgroundMainDark {
+    background-color: var(--maincd);
+  }
+  
+  .backgroundMainShadow {
+    background-color: var(--mains);
+  }
+  
+  .backgroundGray {
+    background-color: var(--grayc);
+  }
+  
+  .backgroundGrayDark {
+    background-color: var(--graycd);
+  }
+  
+  .backgroundGrayShadow {
+    background-color: var(--grays);
+  }
+  
+  .backgroundRed {
+    background-color: var(--redc);
+  }
+  
+  .backgroundRedDark {
+    background-color: var(--redcd);
+  }
+  
+  .backgroundRedShadow {
+    background-color: var(--reds);
+  }
+  
+  .backgroundOrange {
+    background-color: var(--orangec);
+  }
+  
+  .backgroundOrangeDark {
+    background-color: var(--orangecd);
+  }
+  
+  .backgroundOrangeShadow {
+    background-color: var(--oranges);
+  }
+  
+  .backgroundYellow {
+    background-color: var(--yellowc);
+  }
+  
+  .backgroundYellowDark {
+    background-color: var(--yellowcd);
+  }
+  
+  .backgroundYellowShadow {
+    background-color: var(--yellows);
+  }
+  
+  .backgroundGreen {
+    background-color: var(--greenc);
+  }
+  
+  .backgroundGreenDark {
+    background-color: var(--greencd);
+  }
+  
+  .backgroundGreenShadow {
+    background-color: var(--greens);
+  }
+  
+  .backgroundTeal {
+    background-color: var(--tealc);
+  }
+  
+  .backgroundTealDark {
+    background-color: var(--tealcd);
+  }
+  
+  .backgroundTealShadow {
+    background-color: var(--teals);
+  }
+  
+  .backgroundSkyblue {
+    background-color: var(--skybluec);
+  }
+  
+  .backgroundSkyblueDark {
+    background-color: var(--skybluecd);
+  }
+  
+  .backgroundSkyblueShadow {
+    background-color: var(--skyblues);
+  }
+  
+  .backgroundPurple {
+    background-color: var(--purplec);
+  }
+  
+  .backgroundPurpleDark {
+    background-color: var(--purplecd);
+  }
+  
+  .backgroundPurpleShadow {
+    background-color: var(--purples);
+  }
+  
+  .backgroundPink {
+    background-color: var(--pinkc);
+  }
+  
+  .backgroundPinkDark {
+    background-color: var(--pinkcd);
+  }
+  
+  .backgroundPinkShadow {
+    background-color: var(--pinks);
+  }
+  
+  .backgroundLight {
+    background-color: var(--lightc);
+  }
+  
+  .backgroundLightDark {
+    background-color: var(--lightcd);
+  }
+  
+  .backgroundLightShadow {
+    background-color: var(--lights);
+  }
+  
+  .backgroundDark {
+    background-color: var(--darkc);
+  }
+  
+  .backgroundDarkDark {
+    background-color: var(--darkcd);
+  }
+  
+  .backgroundDarkShadow {
+    background-color: var(--darks);
+  }
+  
+  .textMain {
+    color: var(--mainc);
+  }
+  
+  .textMainDark {
+    color: var(--maincd);
+  }
+  
+  .textMainShadow {
+    color: var(--mains);
+  }
+  
+  .textGray {
+    color: var(--grayc);
+  }
+  
+  .textGrayDark {
+    color: var(--graycd);
+  }
+  
+  .textGrayShadow {
+    color: var(--grays);
+  }
+  
+  .textRed {
+    color: var(--redc);
+  }
+  
+  .textRedDark {
+    color: var(--redcd);
+  }
+  
+  .textRedShadow {
+    color: var(--reds);
+  }
+  
+  .textOrange {
+    color: var(--orangec);
+  }
+  
+  .textOrangeDark {
+    color: var(--orangecd);
+  }
+  
+  .textOrangeShadow {
+    color: var(--oranges);
+  }
+  
+  .textYellow {
+    color: var(--yellowc);
+  }
+  
+  .textYellowDark {
+    color: var(--yellowcd);
+  }
+  
+  .textYellowShadow {
+    color: var(--yellows);
+  }
+  
+  .textGreen {
+    color: var(--greenc);
+  }
+  
+  .textGreenDark {
+    color: var(--greencd);
+  }
+  
+  .textGreenShadow {
+    color: var(--greens);
+  }
+  
+  .textTeal {
+    color: var(--tealc);
+  }
+  
+  .textTealDark {
+    color: var(--tealcd);
+  }
+  
+  .textTealShadow {
+    color: var(--teals);
+  }
+  
+  .textSkyblue {
+    color: var(--skybluec);
+  }
+  
+  .textSkyblueDark {
+    color: var(--skybluecd);
+  }
+  
+  .textSkyblueShadow {
+    color: var(--skyblues);
+  }
+  
+  .textPurple {
+    color: var(--purplec);
+  }
+  
+  .textPurpleDark {
+    color: var(--purplecd);
+  }
+  
+  .textPurpleShadow {
+    color: var(--purples);
+  }
+  
+  .textPink {
+    color: var(--pinkc);
+  }
+  
+  .textPinkDark {
+    color: var(--pinkcd);
+  }
+  
+  .textPinkShadow {
+    color: var(--pinks);
+  }
+  
+  .textLight {
+    color: var(--lightc);
+  }
+  
+  .textLightDark {
+    color: var(--lightcd);
+  }
+  
+  .textLightShadow {
+    color: var(--lights);
+  }
+  
+  .textDark {
+    color: var(--darkc);
+  }
+  
+  .textDarkDark {
+    color: var(--darkcd);
+  }
+  
+  .textDarkShadow {
+    color: var(--darks);
+  }
