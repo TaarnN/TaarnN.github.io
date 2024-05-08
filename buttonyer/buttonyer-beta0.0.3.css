@@ -1,0 +1,1140 @@
+:root {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    /**/
+    --mainc: #0a80e0;
+    --maincd: #0072cf;
+    --mains: #0a48b1;
+    /**/
+    --grayc: #c7c7c7;
+    --graycd: #b3b3b3;
+    --grays: #9b9999;
+    /**/
+    --redc: #d51919;
+    --redcd: #a21010;
+    --reds: #760d0d;
+    /**/
+    --orangec: #e27f0e;
+    --orangecd: #c96b00;
+    --oranges: #b0630c;
+    /**/
+    --yellowc: #f5bb1a;
+    --yellowcd: #d8a900;
+    --yellows: #af8900;
+    /**/
+    --greenc: #25b700;
+    --greencd: #1f9701;
+    --greens: #218009;
+    /**/
+    --tealc: #0ecd9a;
+    --tealcd: #0aad82;
+    --teals: #0d9873;
+    /**/
+    --skybluec: #08bfed;
+    --skybluecd: #11a7cd;
+    --skyblues: #0086a8;
+    /**/
+    --purplec: #6806d0;
+    --purplecd: #5b06b6;
+    --purples: #410483;
+    /**/
+    --pinkc: #d907cf;
+    --pinkcd: #bf0ab6;
+    --pinks: #a6049e;
+    /**/
+    --lightc: #e8e8e8;
+    --lightcd: #d9d9d9;
+    --lights: #d1d0d0;
+    /**/
+    --darkc: #2d2c2c;
+    --darkcd: #1d1d1d;
+    --darks: #0f0f0f;
+    /**/
+}
+
+.lightHr {
+    height: 0.5px;
+    background-color: rgb(189, 189, 189);
+    width: 100%;
+}
+
+.mediumHr {
+    height: 3px;
+    background-color: rgb(57, 57, 57);
+    width: 100%;
+}
+
+.boldHr {
+    height: 7px;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+}
+
+/*==========================*/
+/*==========================*/
+.button {
+    border: none;
+    cursor: pointer;
+    width: fit-content;
+    padding-left: 1.7rem;
+    padding-right: 1.7rem;
+    height: 2.5rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: inline-flex;
+    border-radius: 10px;
+    transition-duration: 180ms;
+    letter-spacing: 0.5px;
+}
+
+.button:hover {
+    letter-spacing: 1.2px;
+}
+
+.button:active {
+    letter-spacing: 0.3px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.main.button {
+    box-shadow: var(--mains) -5px 0px 2px;
+    color: white;
+    background-color: var(--mainc);
+}
+
+.main.button:hover {
+    background-color: var(--maincd);
+    box-shadow: var(--mains) -3px 0px 2px;
+}
+
+.gray.button {
+    box-shadow: var(--grays) -5px 0px 2px;
+    color: black;
+    background-color: var(--grayc);
+}
+
+.gray.button:hover {
+    background-color: var(--graycd);
+    box-shadow: var(--grays) -3px 0px 2px;
+}
+
+.red.button {
+    box-shadow: var(--reds) -5px 0px 2px;
+    color: white;
+    background-color: var(--redc);
+}
+
+.red.button:hover {
+    background-color: var(--redcd);
+    box-shadow: var(--reds) -3px 0px 2px;
+}
+
+.orange.button {
+    box-shadow: var(--oranges) -5px 0px 2px;
+    color: white;
+    background-color: var(--orangec);
+}
+
+.orange.button:hover {
+    background-color: var(--orangecd);
+    box-shadow: var(--oranges) -3px 0px 2px;
+}
+
+.yellow.button {
+    box-shadow: var(--yellows) -5px 0px 2px;
+    color: black;
+    background-color: var(--yellowc);
+}
+
+.yellow.button:hover {
+    background-color: var(--yellowcd);
+    box-shadow: var(--yellows) -3px 0px 2px;
+}
+
+.green.button {
+    box-shadow: var(--greens) -5px 0px 2px;
+    color: white;
+    background-color: var(--greenc);
+}
+
+.green.button:hover {
+    background-color: var(--greencd);
+    box-shadow: var(--greens) -3px 0px 2px;
+}
+
+.teal.button {
+    box-shadow: var(--teals) -5px 0px 2px;
+    color: black;
+    background-color: var(--tealc);
+}
+
+.teal.button:hover {
+    background-color: var(--tealcd);
+    box-shadow: var(--teals) -3px 0px 2px;
+}
+
+.skyblue.button {
+    box-shadow: var(--skyblues) -5px 0px 2px;
+    color: black;
+    background-color: var(--skybluec);
+}
+
+.skyblue.button:hover {
+    background-color: var(--skybluecd);
+    box-shadow: var(--skyblues) -3px 0px 2px;
+}
+
+.purple.button {
+    box-shadow: var(--purples) -5px 0px 2px;
+    color: white;
+    background-color: var(--purplec);
+}
+
+.purple.button:hover {
+    background-color: var(--purplecd);
+    box-shadow: var(--purples) -3px 0px 2px;
+}
+
+.pink.button {
+    box-shadow: var(--pinks) -5px 0px 2px;
+    color: white;
+    background-color: var(--pinkc);
+}
+
+.pink.button:hover {
+    background-color: var(--pinkcd);
+    box-shadow: var(--pinks) -3px 0px 2px;
+}
+
+.light.button {
+    box-shadow: var(--lights) -5px 0px 2px;
+    color: black;
+    background-color: var(--lightc);
+}
+
+.light.button:hover {
+    background-color: var(--lightcd);
+    box-shadow: var(--lights) -3px 0px 2px;
+}
+
+.dark.button {
+    box-shadow: var(--darks) -5px 0px 2px;
+    color: white;
+    background-color: var(--darkc);
+}
+
+.dark.button:hover {
+    background-color: var(--darkcd);
+    box-shadow: var(--darks) -3px 0px 2px;
+}
+
+/*==============================*/
+.outlinedbutton {
+    cursor: pointer;
+    /*color: var(--mainc);*/
+    background-color: transparent;
+    width: fit-content;
+    padding-left: 1.7rem;
+    padding-right: 1.7rem;
+    height: 2.5rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: inline-flex;
+    border-radius: 10px;
+    transition-duration: 180ms;
+    letter-spacing: 0.5px;
+    /*box-shadow: var(--mains) -3px 0px 2px;*/
+    /*border: var(--mainc);*/
+    border-style: solid;
+    border-width: 1px;
+}
+
+.outlinedbutton:hover {
+    letter-spacing: 1.2px;
+    /*box-shadow: var(--mains) -2px 0px 2px;*/
+}
+
+.outlinedbutton:active {
+    letter-spacing: 0.3px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.main.outlinedbutton {
+    color: var(--mainc);
+    box-shadow: var(--mains) -3px 0px 1px;
+    border-color: var(--mainc);
+}
+
+.main.outlinedbutton:hover {
+    box-shadow: var(--mains) -2px 0px 2px;
+}
+
+.gray.outlinedbutton {
+    color: var(--grays);
+    box-shadow: var(--grays) -3px 0px 1px;
+    border-color: var(--grayc);
+}
+
+.gray.outlinedbutton:hover {
+    box-shadow: var(--grays) -2px 0px 2px;
+}
+
+.red.outlinedbutton {
+    color: var(--redc);
+    box-shadow: var(--redcd) -3px 0px 1px;
+    border-color: var(--redc);
+}
+
+.red.outlinedbutton:hover {
+    box-shadow: var(--reds) -2px 0px 2px;
+}
+
+.orange.outlinedbutton {
+    color: var(--orangec);
+    box-shadow: var(--oranges) -3px 0px 1px;
+    border-color: var(--orangec);
+}
+
+.orange.outlinedbutton:hover {
+    box-shadow: var(--oranges) -2px 0px 2px;
+}
+
+.yellow.outlinedbutton {
+    color: var(--yellowc);
+    box-shadow: var(--yellows) -3px 0px 1px;
+    border-color: var(--yellowc);
+}
+
+.yellow.outlinedbutton:hover {
+    box-shadow: var(--yellows) -2px 0px 2px;
+}
+
+.green.outlinedbutton {
+    color: var(--greenc);
+    box-shadow: var(--greens) -3px 0px 1px;
+    border-color: var(--greenc);
+}
+
+.green.outlinedbutton:hover {
+    box-shadow: var(--greens) -2px 0px 2px;
+}
+
+.teal.outlinedbutton {
+    color: var(--tealc);
+    box-shadow: var(--teals) -3px 0px 1px;
+    border-color: var(--tealc);
+}
+
+.teal.outlinedbutton:hover {
+    box-shadow: var(--teals) -2px 0px 2px;
+}
+
+.skyblue.outlinedbutton {
+    color: var(--skybluec);
+    box-shadow: var(--skyblues) -3px 0px 1px;
+    border-color: var(--skybluec);
+}
+
+.skyblue.outlinedbutton:hover {
+    box-shadow: var(--skyblues) -2px 0px 2px;
+}
+
+.purple.outlinedbutton {
+    color: var(--purplec);
+    box-shadow: var(--purples) -3px 0px 1px;
+    border-color: var(--purplec);
+}
+
+.purple.outlinedbutton:hover {
+    box-shadow: var(--purples) -2px 0px 2px;
+}
+
+.pink.outlinedbutton {
+    color: var(--pinkc);
+    box-shadow: var(--pinks) -3px 0px 1px;
+    border-color: var(--pinkc);
+}
+
+.pink.outlinedbutton:hover {
+    box-shadow: var(--pinks) -2px 0px 2px;
+}
+
+.light.outlinedbutton {
+    color: var(--lights);
+    box-shadow: var(--lights) -3px 0px 1px;
+    border-color: var(--lightc);
+}
+
+.light.outlinedbutton:hover {
+    box-shadow: var(--lights) -2px 0px 2px;
+}
+
+.dark.outlinedbutton {
+    color: var(--darkc);
+    box-shadow: var(--darks) -3px 0px 1px;
+    border-color: var(--darkc);
+}
+
+.dark.outlinedbutton:hover {
+    box-shadow: var(--darks) -2px 0px 2px;
+}
+
+/*================================*/
+/*================================*/
+
+.container {
+    padding-left: 6%;
+    padding-right: 6%;
+    margin: auto;
+}
+
+.flexContainerColumn {
+    padding-left: 6vw;
+    padding-right: 6vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.flexContainerRow {
+    padding-left: 6vw;
+    padding-right: 6vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.flexContainerColumnReverse {
+    padding-left: 6vw;
+    padding-right: 6vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+}
+
+.flexContainerRowReverse {
+    padding-left: 6vw;
+    padding-right: 6vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.spacingContainer>* {
+    margin: 0.5rem;
+}
+
+.buttonSpacingContainer>button {
+    margin: 0.5rem;
+}
+
+.buttonSpacingContainer>button {
+    margin: 0.5rem;
+}
+
+.divSpacingContainer>div {
+    margin: 0.5rem;
+}
+
+.textSpacingContainer>p {
+    margin: 0.5rem;
+}
+
+.textSpacingContainer>h1 {
+    margin: 0.5rem;
+}
+
+.textSpacingContainer>h2 {
+    margin: 0.5rem;
+}
+
+.textSpacingContainer>h3 {
+    margin: 0.5rem;
+}
+
+.textSpacingContainer>h4 {
+    margin: 0.5rem;
+}
+
+.textSpacingContainer>h5 {
+    margin: 0.5rem;
+}
+
+.textSpacingContainer>h6 {
+    margin: 0.5rem;
+}
+
+.imageSpacingContainer>img {
+    margin: 0.5rem;
+}
+
+.ySpacing {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.xSpacing {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.Spacing {
+    margin: 1rem;
+}
+
+.atLeft {
+    display: flex;
+    justify-content: left;
+}
+
+.atCenter {
+    display: flex;
+    justify-content: center;
+}
+
+.atRight {
+    display: flex;
+    justify-content: right;
+}
+
+/*=======================*/
+/*=======================*/
+
+.textAtLeft {
+    text-align: left;
+}
+
+.textAtCenter {
+    text-align: center;
+}
+
+.textAtRight {
+    text-align: right;
+}
+
+/*=======================*/
+/*=======================*/
+
+.examBox {
+    background-color: transparent;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    border-radius: 10px;
+    width: 5rem;
+    height: 5rem;
+}
+
+.examCircle {
+    background-color: transparent;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+}
+
+/*========================*/
+/*========================*/
+
+.backgroundMain {
+    background-color: var(--mainc);
+}
+
+.backgroundMainDark {
+    background-color: var(--maincd);
+}
+
+.backgroundMainShadow {
+    background-color: var(--mains);
+}
+
+.backgroundGray {
+    background-color: var(--grayc);
+}
+
+.backgroundGrayDark {
+    background-color: var(--graycd);
+}
+
+.backgroundGrayShadow {
+    background-color: var(--grays);
+}
+
+.backgroundRed {
+    background-color: var(--redc);
+}
+
+.backgroundRedDark {
+    background-color: var(--redcd);
+}
+
+.backgroundRedShadow {
+    background-color: var(--reds);
+}
+
+.backgroundOrange {
+    background-color: var(--orangec);
+}
+
+.backgroundOrangeDark {
+    background-color: var(--orangecd);
+}
+
+.backgroundOrangeShadow {
+    background-color: var(--oranges);
+}
+
+.backgroundYellow {
+    background-color: var(--yellowc);
+}
+
+.backgroundYellowDark {
+    background-color: var(--yellowcd);
+}
+
+.backgroundYellowShadow {
+    background-color: var(--yellows);
+}
+
+.backgroundGreen {
+    background-color: var(--greenc);
+}
+
+.backgroundGreenDark {
+    background-color: var(--greencd);
+}
+
+.backgroundGreenShadow {
+    background-color: var(--greens);
+}
+
+.backgroundTeal {
+    background-color: var(--tealc);
+}
+
+.backgroundTealDark {
+    background-color: var(--tealcd);
+}
+
+.backgroundTealShadow {
+    background-color: var(--teals);
+}
+
+.backgroundSkyblue {
+    background-color: var(--skybluec);
+}
+
+.backgroundSkyblueDark {
+    background-color: var(--skybluecd);
+}
+
+.backgroundSkyblueShadow {
+    background-color: var(--skyblues);
+}
+
+.backgroundPurple {
+    background-color: var(--purplec);
+}
+
+.backgroundPurpleDark {
+    background-color: var(--purplecd);
+}
+
+.backgroundPurpleShadow {
+    background-color: var(--purples);
+}
+
+.backgroundPink {
+    background-color: var(--pinkc);
+}
+
+.backgroundPinkDark {
+    background-color: var(--pinkcd);
+}
+
+.backgroundPinkShadow {
+    background-color: var(--pinks);
+}
+
+.backgroundLight {
+    background-color: var(--lightc);
+}
+
+.backgroundLightDark {
+    background-color: var(--lightcd);
+}
+
+.backgroundLightShadow {
+    background-color: var(--lights);
+}
+
+.backgroundDark {
+    background-color: var(--darkc);
+}
+
+.backgroundDarkDark {
+    background-color: var(--darkcd);
+}
+
+.backgroundDarkShadow {
+    background-color: var(--darks);
+}
+
+.textMain {
+    color: var(--mainc);
+}
+
+.textMainDark {
+    color: var(--maincd);
+}
+
+.textMainShadow {
+    color: var(--mains);
+}
+
+.textGray {
+    color: var(--grayc);
+}
+
+.textGrayDark {
+    color: var(--graycd);
+}
+
+.textGrayShadow {
+    color: var(--grays);
+}
+
+.textRed {
+    color: var(--redc);
+}
+
+.textRedDark {
+    color: var(--redcd);
+}
+
+.textRedShadow {
+    color: var(--reds);
+}
+
+.textOrange {
+    color: var(--orangec);
+}
+
+.textOrangeDark {
+    color: var(--orangecd);
+}
+
+.textOrangeShadow {
+    color: var(--oranges);
+}
+
+.textYellow {
+    color: var(--yellowc);
+}
+
+.textYellowDark {
+    color: var(--yellowcd);
+}
+
+.textYellowShadow {
+    color: var(--yellows);
+}
+
+.textGreen {
+    color: var(--greenc);
+}
+
+.textGreenDark {
+    color: var(--greencd);
+}
+
+.textGreenShadow {
+    color: var(--greens);
+}
+
+.textTeal {
+    color: var(--tealc);
+}
+
+.textTealDark {
+    color: var(--tealcd);
+}
+
+.textTealShadow {
+    color: var(--teals);
+}
+
+.textSkyblue {
+    color: var(--skybluec);
+}
+
+.textSkyblueDark {
+    color: var(--skybluecd);
+}
+
+.textSkyblueShadow {
+    color: var(--skyblues);
+}
+
+.textPurple {
+    color: var(--purplec);
+}
+
+.textPurpleDark {
+    color: var(--purplecd);
+}
+
+.textPurpleShadow {
+    color: var(--purples);
+}
+
+.textPink {
+    color: var(--pinkc);
+}
+
+.textPinkDark {
+    color: var(--pinkcd);
+}
+
+.textPinkShadow {
+    color: var(--pinks);
+}
+
+.textLight {
+    color: var(--lightc);
+}
+
+.textLightDark {
+    color: var(--lightcd);
+}
+
+.textLightShadow {
+    color: var(--lights);
+}
+
+.textDark {
+    color: var(--darkc);
+}
+
+.textDarkDark {
+    color: var(--darkcd);
+}
+
+.textDarkShadow {
+    color: var(--darks);
+}
+
+/*=====================*/
+/*=====================*/
+
+.checkbox {
+    appearance: none;
+}
+
+.checkbox::before {
+    transition-duration: 250ms;
+    transition-property: background-color;
+    width: 1rem;
+    height: 1rem;
+    border-style: solid;
+    content: "";
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 0.3rem;
+    text-align: center;
+    align-content: center;
+}
+
+.checkbox:checked::before {
+    width: 1rem;
+    height: 1rem;
+    border-style: solid;
+    content: "\2714";
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 0.3rem;
+    margin-bottom: 3px;
+}
+
+.main.checkbox::before {
+    border-color: var(--maincd);
+}
+
+.main.checkbox:checked::before {
+    color: white;
+    background-color: var(--mainc);
+}
+
+.main.checkbox:active::before {
+    background-color: var(--mains);
+    color: white;
+}
+
+.gray.checkbox::before {
+    border-color: var(--graycd);
+}
+
+.gray.checkbox:checked::before {
+    color: black;
+    background-color: var(--grayc);
+}
+
+.gray.checkbox:active::before {
+    background-color: var(--grays);
+    color: black;
+}
+
+.red.checkbox::before {
+    border-color: var(--redc);
+}
+
+.red.checkbox:checked::before {
+    color: white;
+    background-color: var(--redc);
+}
+
+.red.checkbox:active::before {
+    background-color: var(--reds);
+    color: white;
+}
+
+.orange.checkbox::before {
+    border-color: var(--orangecd);
+}
+
+.orange.checkbox:checked::before {
+    color: white;
+    background-color: var(--orangec);
+}
+
+.orange.checkbox:active::before {
+    background-color: var(--oranges);
+    color: white;
+}
+
+.yellow.checkbox::before {
+    border-color: var(--yellowcd);
+}
+
+.yellow.checkbox:checked::before {
+    color: black;
+    background-color: var(--yellowc);
+}
+
+.yellow.checkbox:active::before {
+    background-color: var(--yellows);
+    color: black;
+}
+
+.green.checkbox::before {
+    border-color: var(--greencd);
+}
+
+.green.checkbox:checked::before {
+    color: white;
+    background-color: var(--greenc);
+}
+
+.green.checkbox:active::before {
+    background-color: var(--greens);
+    color: white;
+}
+
+.teal.checkbox::before {
+    border-color: var(--tealcd);
+}
+
+.teal.checkbox:checked::before {
+    color: black;
+    background-color: var(--tealc);
+}
+
+.teal.checkbox:active::before {
+    background-color: var(--teals);
+    color: black;
+}
+
+.skyblue.checkbox::before {
+    border-color: var(--skybluecd);
+}
+
+.skyblue.checkbox:checked::before {
+    color: black;
+    background-color: var(--skybluec);
+}
+
+.skyblue.checkbox:active::before {
+    background-color: var(--skyblues);
+    color: black;
+}
+
+.purple.checkbox::before {
+    border-color: var(--purplecd);
+}
+
+.purple.checkbox:checked::before {
+    color: white;
+    background-color: var(--purplec);
+}
+
+.purple.checkbox:active::before {
+    background-color: var(--purples);
+    color: white;
+}
+
+.pink.checkbox::before {
+    border-color: var(--pinkcd);
+}
+
+.pink.checkbox:checked::before {
+    color: white;
+    background-color: var(--pinkc);
+}
+
+.pink.checkbox:active::before {
+    background-color: var(--pinks);
+    color: white;
+}
+
+.light.checkbox::before {
+    border-color: var(--lightcd);
+}
+
+.light.checkbox:checked::before {
+    color: black;
+    background-color: var(--lightc);
+}
+
+.light.checkbox:active::before {
+    background-color: var(--lights);
+    color: black;
+}
+
+.dark.checkbox::before {
+    border-color: var(--darkcd);
+}
+
+.dark.checkbox:checked::before {
+    color: white;
+    background-color: var(--darkc);
+}
+
+.dark.checkbox:active::before {
+    background-color: var(--darks);
+    color: white;
+}
+
+/*====================*/
+/*====================*/
+
+.radio {
+    appearance: none;
+}
+
+.radio::before {
+    width: 1rem;
+    height: 1rem;
+    background-color: transparent;
+    display: inline-block;
+    content: "";
+    cursor: pointer;
+    border-radius: 100%;
+    border-style: solid;
+    transition-property: transform;
+    transition-duration: 250ms;
+    border-color: var(--grayc);
+}
+
+.radio:checked::before {
+    width: 1.4rem;
+    height: 1.4rem;
+    transform: scale(0.6);
+    background-color: black;
+    border: none;
+    content: "";
+    outline: 1px solid black;
+    outline-offset: 5px;
+    outline-width: 5px;
+}
+
+.main.radio:checked::before {
+    opacity: 100;
+    background-color: var(--mainc);
+    outline-color: var(--mains);
+}
+
+.gray.radio:checked::before {
+    opacity: 100;
+    background-color: var(--graycd);
+    outline-color: var(--grays);
+}
+
+.red.radio:checked::before {
+    opacity: 100;
+    background-color: var(--redc);
+    outline-color: var(--redcd);
+}
+
+.orange.radio:checked::before {
+    opacity: 100;
+    background-color: var(--orangec);
+    outline-color: var(--oranges);
+}
+
+.yellow.radio:checked::before {
+    opacity: 100;
+    background-color: var(--yellowc);
+    outline-color: var(--yellowcd);
+}
+
+.green.radio:checked::before {
+    opacity: 100;
+    background-color: var(--greenc);
+    outline-color: var(--greens);
+}
+
+.teal.radio:checked::before {
+    opacity: 100;
+    background-color: var(--tealc);
+    outline-color: var(--teals);
+}
+
+.skyblue.radio:checked::before {
+    opacity: 100;
+    background-color: var(--skybluec);
+    outline-color: var(--skyblues);
+}
+
+.purple.radio:checked::before {
+    opacity: 100;
+    background-color: var(--purplec);
+    outline-color: var(--purples);
+}
+
+.pink.radio:checked::before {
+    opacity: 100;
+    background-color: var(--pinkc);
+    outline-color: var(--pinks);
+}
+
+.light.radio:checked::before {
+    opacity: 100;
+    background-color: var(--lightc);
+    outline-color: var(--lights);
+}
+
+.dark.radio:checked::before {
+    opacity: 100;
+    background-color: var(--darkc);
+    outline-color: var(--darks);
+}

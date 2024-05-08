@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buttonyer Beta 0.0.3 Features</title>
+    <link rel="icon" id="iconlogo" type="image/x-icon" />
+    <link rel="stylesheet" href="https://taarnn.github.io/buttonyer/buttonyer-beta0.0.3.css" />
+    <!--https://taarnn.github.io/buttonyer/buttonyer-beta0.0.3.css-->
+
+    <style>
+      .hr {
+        height: 0.5px;
+        background-color: rgb(189, 189, 189);
+        width: 20rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+      }
+      button {
+        text-transform: capitalize;
+      }
+      .s {
+        width: 13rem;
+      }
+      .xs {
+        width: 11.6rem;
+      }
+      .ph {
+        color: #0a48b1;
+        font-weight: 600;
+        font-size: 1.3rem;
+      }
+      .examBox {
+        text-align: center;
+        align-content: center;
+      }
+    </style>
+  </head>
+  <body class="ySpacing">
+    <div class="flexContainerColumn buttonSpacingContainer ySpacing">
+      <img id="alogo" width="360px" />
+      <script>
+        document.getElementById("iconlogo").href =
+          "https://taarnn.github.io/buttonyer/buttonyer-beta0.0.1.showcase/logo.001.png";
+        document.getElementById("alogo").src =
+          "https://taarnn.github.io/buttonyer/buttonyer-beta0.0.1.showcase/alogo.png";
+      </script>
+      <h1 style="font-size: 4rem; font-weight: 900; color: #0a80e0">
+        Buttonyer
+      </h1>
+      <p
+        style="
+          color: #0a48b1;
+          font-weight: 700;
+          font-size: 2rem;
+          margin-bottom: 0.5rem;
+        "
+      >
+        Beta 0.0.3 - Elements Update part 1
+      </p>
+      <div class="flexContainerRow spacingContainer">
+        <div class="lightHr s"></div>
+        <p
+          style="
+            color: var(--darkc);
+            font-weight: 900;
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+          "
+        >
+          Buttons
+        </p>
+        <div class="lightHr s"></div>
+      </div>
+      <button class="main button">main button</button>
+      <button class="gray button">gray button</button>
+      <button class="red button">red button</button>
+      <button class="orange button">orange button</button>
+      <button class="yellow button">yellow button</button>
+      <button class="green button">green button</button>
+      <button class="teal button">teal button</button>
+      <button class="skyblue button">skyblue button</button>
+      <button class="purple button">purple button</button>
+      <button class="pink button">pink button</button>
+      <button class="light button">light button</button>
+      <button class="dark button">dark button</button>
+
+      <p
+        style="
+          color: #0a48b1;
+          font-weight: 600;
+          font-size: 1.2rem;
+          margin-top: 1rem;
+          margin-bottom: 0.7rem;
+        "
+      >
+        Using by
+      </p>
+      <p style="color: #0a80e0; font-weight: 700; font-size: 1.1rem">
+        [ Color ] + button
+      </p>
+      <p
+        style="color: #0072cf; font-weight: 700; font-size: 0.8rem"
+        class="ySpacing"
+      >
+        Ex. <span><</span>button class="main button"><span><</span>/button>
+      </p>
+
+      <div class="flexContainerRow spacingContainer">
+        <div class="hr xs"></div>
+        <p
+          style="
+            color: var(--darkc);
+            font-weight: 900;
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+          "
+          class="textAtCenter"
+        >
+          Outlined Buttons
+        </p>
+        <div class="hr xs"></div>
+      </div>
+
+      <button class="main outlinedbutton">main outlined button</button>
+      <button class="gray outlinedbutton">gray outlined button</button>
+      <button class="red outlinedbutton">red outlined button</button>
+      <button class="orange outlinedbutton">orange outlined button</button>
+      <button class="yellow outlinedbutton">yellow outlined button</button>
+      <button class="green outlinedbutton">green outlined button</button>
+      <button class="teal outlinedbutton">teal outlined button</button>
+      <button class="skyblue outlinedbutton">skyblue outlined button</button>
+      <button class="purple outlinedbutton">purple outlined button</button>
+      <button class="pink outlinedbutton">pink outlined button</button>
+      <button class="light outlinedbutton">light outlined button</button>
+      <button class="dark outlinedbutton">dark outlined button</button>
+
+      <p
+        style="
+          color: #0a48b1;
+          font-weight: 600;
+          font-size: 1.2rem;
+          margin-top: 1rem;
+          margin-bottom: 0.7rem;
+        "
+      >
+        Using by
+      </p>
+      <p style="color: #0a80e0; font-weight: 700">[ Color ] + outlinedbutton</p>
+      <p
+        style="color: #0072cf; font-weight: 700; font-size: 0.8rem"
+        class="ySpacing"
+      >
+        Ex. <span><</span>button class="main
+        outlinedbutton"><span><</span>/button>
+      </p>
+
+      <div class="flexContainerRow spacingContainer">
+        <div class="hr s"></div>
+        <p
+          style="
+            color: var(--darkc);
+            font-weight: 900;
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+          "
+        >
+          Placers
+        </p>
+        <div class="hr s"></div>
+      </div>
+    </div>
+
+    <div class="flexContainerColumn">
+      <h1 class="ph">Container</h1>
+    </div>
+    <div class="flexContainerColumn ySpacing textAtCenter">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ducimus
+        qui voluptates veritatis vel. Hic labore vero facilis aut earum cumque
+        ut, eum, alias accusamus doloremque molestias consequatur provident
+        officia? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Tempora cupiditate necessitatibus dicta voluptas, recusandae,
+        repudiandae repellendus, quam illo blanditiis deserunt accusantium?
+        Dignissimos impedit ut iusto repellendus rem aspernatur. Fugit, sit.
+      </p>
+      <p
+        style="
+          color: #0a48b1;
+          font-weight: 600;
+          font-size: 1.2rem;
+          margin-top: 1rem;
+          margin-bottom: 0.7rem;
+        "
+      >
+        Using by
+      </p>
+      <p style="color: #0a80e0; font-weight: 700">container</p>
+      <p
+        style="color: #0072cf; font-weight: 700; font-size: 0.8rem"
+        class="ySpacing"
+      >
+        Ex. <span><</span>div class="container"><span><</span>/div>
+      </p>
+    </div>
+    <div class="flexContainerColumn"><div class="hr"></div></div>
+
+    <div class="flexContainerColumn" style="margin-top: 1.5rem">
+      <h1 class="ph">flexContainerColumn</h1>
+    </div>
+    <div class="flexContainerColumn ySpacing spacingContainer">
+      <div class="examBox">1</div>
+      <div class="examBox">2</div>
+      <div class="examBox">3</div>
+      <p
+        style="
+          color: #0a48b1;
+          font-weight: 600;
+          font-size: 1.2rem;
+          margin-top: 1rem;
+          margin-bottom: 0.7rem;
+        "
+      >
+        Using by
+      </p>
+      <p style="color: #0a80e0; font-weight: 700">flexContainerColumn</p>
+      <p
+        style="color: #0072cf; font-weight: 700; font-size: 0.8rem"
+        class="ySpacing"
+      >
+        Ex. <span><</span>div class="flexContainerColumn"><span><</span>/div>
+      </p>
+      <div class="hr"></div>
+      <div class="flexContainerColumn" style="margin-top: 1.5rem">
+        <h1 class="ph">flexContainerColumnReverse</h1>
+      </div>
+      <div class="flexContainerColumnReverse ySpacing spacingContainer">
+        <div class="examBox">1</div>
+        <div class="examBox">2</div>
+        <div class="examBox">3</div>
+      </div>
+      <p
+        style="
+          color: #0a48b1;
+          font-weight: 600;
+          font-size: 1.2rem;
+          margin-top: 1rem;
+          margin-bottom: 0.7rem;
+        "
+      >
+        Using by
+      </p>
+      <p style="color: #0a80e0; font-weight: 700">flexContainerColumnReverse</p>
+      <p
+        style="color: #0072cf; font-weight: 700; font-size: 0.8rem"
+        class="ySpacing"
+      >
+        Ex. <span><</span>div
+        class="flexContainerColumnReverse"><span><</span>/div>
+      </p>
+      <div class="hr"></div>
+      <div class="flexContainerColumn" style="margin-top: 1.5rem">
+        <h1 class="ph">flexContainerRow</h1>
+      </div>
+      <div class="flexContainerRow ySpacing spacingContainer">
+        <div class="examBox">1</div>
+        <div class="examBox">2</div>
+        <div class="examBox">3</div>
+      </div>
+      <p
+        style="
+          color: #0a48b1;
+          font-weight: 600;
+          font-size: 1.2rem;
+          margin-top: 1rem;
+          margin-bottom: 0.7rem;
+        "
+      >
+        Using by
+      </p>
+      <p style="color: #0a80e0; font-weight: 700">flexContainerRow</p>
+      <p
+        style="color: #0072cf; font-weight: 700; font-size: 0.8rem"
+        class="ySpacing"
+      >
+        Ex. <span><</span>div class="flexContainerRow"><span><</span>/div>
+      </p>
+      <div class="hr"></div>
+      <div class="flexContainerColumn" style="margin-top: 1.5rem">
+        <h1 class="ph">flexContainerRowReverse</h1>
+      </div>
+      <div class="flexContainerRowReverse ySpacing spacingContainer">
+        <div class="examBox">1</div>
+        <div class="examBox">2</div>
+        <div class="examBox">3</div>
+      </div>
+      <p
+        style="
+          color: #0a48b1;
+          font-weight: 600;
+          font-size: 1.2rem;
+          margin-top: 1rem;
+          margin-bottom: 0.7rem;
+        "
+      >
+        Using by
+      </p>
+      <p style="color: #0a80e0; font-weight: 700">flexContainerRowReverse</p>
+      <p
+        style="color: #0072cf; font-weight: 700; font-size: 0.8rem"
+        class="ySpacing"
+      >
+        Ex. <span><</span>div
+        class="flexContainerRowReverse"><span><</span>/div>
+      </p>
+      <div class="hr"></div>
+      <div class="flexContainerColumn" style="margin-top: 1.5rem">
+        <h1 class="ph">without spacingContainer</h1>
+        <h1 class="ph textAtCenter" style="font-size: 0.8rem">
+          (spacingContainer, buttonSpacingContainer, divSpacingContainer,
+          imageSpacingContainer)
+        </h1>
+      </div>
+      <div class="ySpacing flexContainerRow">
+        <div class="examBox">1</div>
+        <div class="examBox">2</div>
+        <div class="examBox">3</div>
+      </div>
+      <div class="flexContainerColumn" style="margin-top: 0rem">
+        <h1 class="ph">spacingContainer</h1>
+        <h1 class="ph textAtCenter" style="font-size: 0.8rem">
+          (spacingContainer, buttonSpacingContainer, divSpacingContainer,
+          imageSpacingContainer)
+        </h1>
+      </div>
+      <div class="ySpacing spacingContainer flexContainerRow">
+        <div class="examBox">1</div>
+        <div class="examBox">2</div>
+        <div class="examBox">3</div>
+      </div>
+      <p
+        style="
+          color: #0a48b1;
+          font-weight: 600;
+          font-size: 1.2rem;
+          margin-top: 1rem;
+          margin-bottom: 0.7rem;
+        "
+      >
+        Using by
+      </p>
+      <p style="color: #0a80e0; font-weight: 700">
+        (...)[Spacing/spacing]Container
+      </p>
+      <p
+        style="color: #0072cf; font-weight: 700; font-size: 0.8rem"
+        class="ySpacing"
+      >
+        Ex. <span><</span>div
+        class="(...)[Spacing/spacing]pacingContainer"><span><</span>/div>
+      </p>
+      <div class="hr"></div>
+      <div class="flexContainerColumn" style="margin-top: 1.5rem">
+        <h1 class="ph">without Spacing</h1>
+        <h1 class="ph textAtCenter" style="font-size: 0.8rem">
+          (Spacing, ySpacing, xSpacing)
+        </h1>
+      </div>
+      <div class="ySpacing flexContainerRow">
+        <div class="flexContainerColumn" style="padding: 0">
+          <div
+            class="examBox"
+            style="height: 3rem; width: 3rem; border-color: lightgray"
+          ></div>
+          <div
+            class="examBox"
+            style="height: 3rem; width: 3rem; border-color: lightgray"
+          ></div>
+          <div class="flexContainerRow">
+            <div
+              class="examBox"
+              style="height: 3rem; width: 3rem; border-color: lightgray"
+            ></div>
+            <div
+              class="examBox"
+              style="height: 3rem; width: 3rem; border-color: lightgray"
+            ></div>
+            <div class="examBox" style="height: 3rem; width: 3rem"></div>
+            <div
+              class="examBox"
+              style="height: 3rem; width: 3rem; border-color: lightgray"
+            ></div>
+            <div
+              class="examBox"
+              style="height: 3rem; width: 3rem; border-color: lightgray"
+            ></div>
+          </div>
+          <div
+            class="examBox"
+            style="height: 3rem; width: 3rem; border-color: lightgray"
+          ></div>
+          <div
+            class="examBox"
+            style="height: 3rem; width: 3rem; border-color: lightgray"
+          ></div>
+        </div>
+      </div>
+      <div class="flexContainerColumn" style="margin-top: 0rem">
+        <h1 class="ph">Spacing</h1>
+        <h1 class="ph textAtCenter" style="font-size: 0.8rem">
+          (Spacing, ySpacing, xSpacing)
+        </h1>
+      </div>
+      <div class="ySpacing flexContainerRow">
+        <div class="flexContainerColumn" style="padding: 0">
+          <div
+            class="examBox"
+            style="height: 3rem; width: 3rem; border-color: lightgray"
+          ></div>
+          <div
+            class="examBox"
+            style="height: 3rem; width: 3rem; border-color: lightgray"
+          ></div>
+          <div class="flexContainerRow">
+            <div
+              class="examBox"
+              style="height: 3rem; width: 3rem; border-color: lightgray"
+            ></div>
+            <div
+              class="examBox"
+              style="height: 3rem; width: 3rem; border-color: lightgray"
+            ></div>
+            <div
+              class="examBox Spacing"
+              style="height: 3rem; width: 3rem"
+            ></div>
+            <div
+              class="examBox"
+              style="height: 3rem; width: 3rem; border-color: lightgray"
+            ></div>
+            <div
+              class="examBox"
+              style="height: 3rem; width: 3rem; border-color: lightgray"
+            ></div>
+          </div>
+          <div
+            class="examBox"
+            style="height: 3rem; width: 3rem; border-color: lightgray"
+          ></div>
+          <div
+            class="examBox"
+            style="height: 3rem; width: 3rem; border-color: lightgray"
+          ></div>
+        </div>
+      </div>
+      <p
+        style="
+          color: #0a48b1;
+          font-weight: 600;
+          font-size: 1.2rem;
+          margin-top: 1rem;
+          margin-bottom: 0.7rem;
+        "
+      >
+        Using by
+      </p>
+      <p style="color: #0a80e0; font-weight: 700">(...)Spacing</p>
+      <p
+        style="color: #0072cf; font-weight: 700; font-size: 0.8rem"
+        class="ySpacing"
+      >
+        Ex. <span><</span>div class="(...)Spacing"><span><</span>/div>
+      </p>
+      <div class="hr"></div>
+      <div class="flexContainerColumn" style="margin-top: 0rem">
+        <h1 class="ph">textAt / at</h1>
+        <h1 class="ph textAtCenter" style="font-size: 0.8rem">
+          (textAtLeft, textAtCenter, textAtRight / atLeft, atCenter, atRight)
+        </h1>
+      </div>
+    </div>
+    <div class="ySpacing container">
+      <p class="textAtLeft">Left</p>
+      <p class="textAtCenter">Center</p>
+      <p class="textAtRight">Right</p>
+      <div class="atLeft">
+        <div class="examBox">Left</div>
+      </div>
+      <div class="atCenter">
+        <div class="examBox">Center</div>
+      </div>
+      <div class="atRight">
+        <div class="examBox">Right</div>
+      </div>
+    </div>
+    <div class="flexContainerColumn">
+      <p
+        style="
+          color: #0a48b1;
+          font-weight: 600;
+          font-size: 1.2rem;
+          margin-top: 1rem;
+          margin-bottom: 0.7rem;
+        "
+      >
+        Using by
+      </p>
+      <p style="color: #0a80e0; font-weight: 700">(text)[At/at]</p>
+      <p
+        style="color: #0072cf; font-weight: 700; font-size: 0.8rem"
+        class="ySpacing"
+      >
+        Ex. <span><</span>div class="(text)[At/at]"><span><</span>/div>
+      </p>
+    </div>
+    <div class="ySpacing flexContainerColumn">
+      <div class="flexContainerRow spacingContainer">
+        <div class="lightHr s"></div>
+        <p
+          style="
+            color: var(--darkc);
+            font-weight: 900;
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+          "
+        >
+          Elements
+        </p>
+        <div class="lightHr s"></div>
+      </div>
+      <div class="flexContainerColumn" style="margin-top: 1.5rem">
+        <h1 class="ph">Checkbox</h1>
+      </div>
+      <div class="ySpacing flexContainerRow">
+        <div
+          class="flexContainerColumn spacingContainer"
+          style="padding-left: 0; padding-right: 0"
+        >
+          <input
+            type="checkbox"
+            name="chbx1"
+            id="chbx1"
+            class="main checkbox"
+          />
+          <input
+            type="checkbox"
+            name="chbx1"
+            id="chbx1"
+            class="gray checkbox"
+          />
+          <input type="checkbox" name="chbx1" id="chbx1" class="red checkbox" />
+        </div>
+        <div
+          class="flexContainerColumn spacingContainer"
+          style="padding-left: 0; padding-right: 0"
+        >
+          <input
+            type="checkbox"
+            name="chbx1"
+            id="chbx1"
+            class="orange checkbox"
+          />
+          <input
+            type="checkbox"
+            name="chbx1"
+            id="chbx1"
+            class="yellow checkbox"
+          />
+          <input
+            type="checkbox"
+            name="chbx1"
+            id="chbx1"
+            class="green checkbox"
+          />
+        </div>
+        <div
+          class="flexContainerColumn spacingContainer"
+          style="padding-left: 0; padding-right: 0"
+        >
+          <input
+            type="checkbox"
+            name="chbx1"
+            id="chbx1"
+            class="teal checkbox"
+          />
+          <input
+            type="checkbox"
+            name="chbx1"
+            id="chbx1"
+            class="skyblue checkbox"
+          />
+          <input
+            type="checkbox"
+            name="chbx1"
+            id="chbx1"
+            class="purple checkbox"
+          />
+        </div>
+        <div
+          class="flexContainerColumn spacingContainer"
+          style="padding-left: 0; padding-right: 0"
+        >
+          <input
+            type="checkbox"
+            name="chbx1"
+            id="chbx1"
+            class="pink checkbox"
+          />
+          <input
+            type="checkbox"
+            name="chbx1"
+            id="chbx1"
+            class="light checkbox"
+          />
+          <input
+            type="checkbox"
+            name="chbx1"
+            id="chbx1"
+            class="dark checkbox"
+          />
+        </div>
+      </div>
+      <p
+        style="
+          color: #0a48b1;
+          font-weight: 600;
+          font-size: 1.2rem;
+          margin-top: 1rem;
+          margin-bottom: 0.7rem;
+        "
+      >
+        Using by
+      </p>
+      <p style="color: #0a80e0; font-weight: 700">[ Color ] checkbox</p>
+      <p
+        style="color: #0072cf; font-weight: 700; font-size: 0.8rem"
+        class="ySpacing"
+      >
+        Ex. <span><</span>input type="checkbox" class="main checkbox">
+      </p>
+    </div>
+    <div class="ySpacing flexContainerColumn">
+      <div class="hr"></div>
+      <div class="flexContainerColumn" style="margin-top: 1.5rem">
+        <h1 class="ph">Radio</h1>
+      </div>
+      <form class="flexContainerRow ySpacing">
+        <div class="flexContainerColumn spacingContainer" style="padding: 0">
+          <input type="radio" class="main radio" name="rdo1" id="rdo1" />
+          <input type="radio" class="gray radio" name="rdo1" id="rdo1" />
+          <input type="radio" class="red radio" name="rdo1" id="rdo1" />
+        </div>
+        <div class="flexContainerColumn spacingContainer" style="padding: 0">
+          <input type="radio" class="orange radio" name="rdo1" id="rdo1" />
+          <input type="radio" class="yellow radio" name="rdo1" id="rdo1" />
+          <input type="radio" class="green radio" name="rdo1" id="rdo1" />
+        </div>
+        <div class="flexContainerColumn spacingContainer" style="padding: 0">
+          <input type="radio" class="teal radio" name="rdo1" id="rdo1" />
+          <input type="radio" class="skyblue radio" name="rdo1" id="rdo1" />
+          <input type="radio" class="purple radio" name="rdo1" id="rdo1" />
+        </div>
+        <div class="flexContainerColumn spacingContainer" style="padding: 0">
+          <input type="radio" class="pink radio" name="rdo1" id="rdo1" />
+          <input type="radio" class="light radio" name="rdo1" id="rdo1" />
+          <input type="radio" class="dark radio" name="rdo1" id="rdo1" />
+        </div>
+      </form>
+      <p
+        style="
+          color: #0a48b1;
+          font-weight: 600;
+          font-size: 1.2rem;
+          margin-top: 1rem;
+          margin-bottom: 0.7rem;
+        "
+      >
+        Using by
+      </p>
+      <p style="color: #0a80e0; font-weight: 700">[ Color ] radio</p>
+      <p
+        style="color: #0072cf; font-weight: 700; font-size: 0.8rem"
+        class="ySpacing"
+      >
+        Ex. <span><</span>input type="radio" class="main radio">
+      </p>
+    </div>
+  </body>
+</html>
